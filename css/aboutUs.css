@@ -2886,9 +2886,9 @@ h6 {
 ============================================================================================ */
 .primary-btn {
   display: inline-block;
-  background: #fdc632;
+  background: #005DA1;
   padding: 0px 48px;
-  color: #002347;
+  color: #FFFFFF;
   font-size: 13px;
   font-weight: 500;
   line-height: 50px;
@@ -2902,8 +2902,11 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .primary-btn:hover {
-    background: #002347;
-    color: #fdc632; }
+    background: #FFFFFF;
+    color: #005DA1; 
+    /* outline: #005DA1; */
+    border: 1px solid #005DA1;
+  }
 
 .primary-btn2 {
   display: inline-block;

@@ -107,3 +107,17 @@
     
 })(jQuery);
 
+{/* <script> */}
+        window.onload = function() {
+          const headings = document.querySelectorAll('.one h1');
+    
+          headings.forEach(heading => {
+            const computedWidth = window.getComputedStyle(heading).width;
+            const parsedWidth = parseInt(computedWidth);
+            const afterElement = heading.nextElementSibling;
+    
+            afterElement.style.width = parsedWidth + 'px';
+            afterElement.style.marginLeft = '-' + (parsedWidth / 2) + 'px';
+          });
+        };
+    //   </script>

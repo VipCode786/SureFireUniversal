@@ -9312,3 +9312,9 @@ a.text-dark:hover {
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+@media (max-width: 767px) {
+    .mx-w-100 {
+      max-width: 100% !important;
+    }
+}
