@@ -295,6 +295,7 @@
   }
   .one h1{
     color: var(--title);
+    word-spacing:10px
   }
   .one h1:before {
     width: 28px;
