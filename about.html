@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="icon" href="img/logo_bar.png" type="image/png" />
     <title>About Us</title>
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/aboutUs.css" />
 
@@ -35,7 +37,8 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
         .dropdown-toggle::after {
@@ -48,42 +51,65 @@
 
   <body>
     <!--================ Start Header Menu Area =================-->
-     <!-- Spinner Start -->
-     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+          <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+  <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="width: 190px;">
+          <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
+          <img src="./img/logo.webp" alt="" height="100%">
+      </a>
+      <button type="button" class="navbar-toggler me-1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+              <a href="index.html" class="nav-item nav-link ">Home</a>
+              <a href="about.html" class="nav-item nav-link active">About</a>
+              <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Visa Services</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="student-visa.html" class="dropdown-item">Student Visa</a>
+                    <a href="" class="dropdown-item">Tourist Visa</a>
+                    <a href="" class="dropdown-item">Permanent Residency</a>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <div class="frame-3 px-4">
+              <a class="group-1" href="tel:+91 9891146941">
+                <div class="ellipse-1"></div>
+                <svg
+                  class="material-symbols-call"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.95 21.5C17.8667 21.5 15.8083 21.046 13.775 20.138C11.7417 19.23 9.89167 17.9423 8.225 16.275C6.55833 14.6083 5.271 12.7583 4.363 10.725C3.455 8.69167 3.00067 6.63333 3 4.55C3 4.25 3.1 4 3.3 3.8C3.5 3.6 3.75 3.5 4.05 3.5H8.1C8.33333 3.5 8.54167 3.57933 8.725 3.738C8.90833 3.89667 9.01667 4.084 9.05 4.3L9.7 7.8C9.73333 8.06667 9.725 8.29167 9.675 8.475C9.625 8.65833 9.53333 8.81667 9.4 8.95L6.975 11.4C7.30833 12.0167 7.704 12.6123 8.162 13.187C8.62 13.7617 9.12433 14.316 9.675 14.85C10.1917 15.3667 10.7333 15.846 11.3 16.288C11.8667 16.73 12.4667 17.134 13.1 17.5L15.45 15.15C15.6 15 15.796 14.8877 16.038 14.813C16.28 14.7383 16.5173 14.7173 16.75 14.75L20.2 15.45C20.4333 15.5167 20.625 15.6377 20.775 15.813C20.925 15.9883 21 16.184 21 16.4V20.45C21 20.75 20.9 21 20.7 21.2C20.5 21.4 20.25 21.5 19.95 21.5Z"
+                    fill="#9A1D8A"
+                  />
+                </svg>
+              </a>
+              <div class="frame-2">
+                <div class="talk-to-an-expert">Talk to an Expert</div>
+                <a class="_91-98911-46941" href="tel:+91 9891146941">+91 98911 46941</a>
+              </div>
+            </div>
+          <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+      </div>
+  </nav>
+  <!-- Navbar End -->
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
@@ -108,7 +134,7 @@
     <!--================End Home Banner Area =================-->
 
     <!--================ Start About Area =================-->
-    <section class="about_area section_gap">
+    <section class="about_area ">
       <div class="container">
         <div class="row h_blog_item">
           <div class="col-lg-6">
@@ -119,7 +145,9 @@
           <div class="col-lg-6">
             <div class="h_blog_text">
               <div class="h_blog_text_inner left right">
-                <h4>Welcome to our Institute</h4>
+                <div class="one mb-4">
+                  <h1 style="font-size: 26px;">Welcome to the </br> SureFire Universal Visa</h1>
+                </div>
                 <p>
                   Subdue whales void god which living don't midst lesser
                   yielding over lights whose. Cattle greater brought sixth fly
@@ -130,9 +158,10 @@
                   over lights whose. Cattle greater brought sixth fly den dry
                   good tree isn't seed stars were the boring.
                 </p>
-                <a class="primary-btn" href="#">
+                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More <i class="ti-arrow-right ml-1"></i></a>
+                <!-- <a class="primary-btn" href="#">
                   Learn More <i class="ti-arrow-right ml-1"></i>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -140,15 +169,386 @@
       </div>
     </section>
     <!--================ End About Area =================-->
+<!-- Process Steps Start -->
+<div class="container-xxl py-5">
 
+   
+  <section class="our-blog p-0 m-0 bg-silver">
+      <div class="container work-process  pb-5 pt-5" style="    overflow: hidden;">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+              <div class="one mb-4">
+                  <h1>Our Student Visa Process</h1>
+                </div>
+          </div>
+          <!-- <div class="title mb-5 text-center">
+          <h3>Our <span class="site-color">Few Process</span></h3>
+      </div> -->
+          <!-- ============ step 1 =========== -->
+          <div class="row justify-content-center">
+              <div class="col-md-5 ">
+                  <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">01</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>Passport</h5>
+                              <p><small>Your passport must be valid for at least six months beyond your period of stay in the United States </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-l d-none d-md-block"></div>
+                  </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-right"></div>
+              </div>
+          </div>
+          <!-- ============ step 2 =========== -->
+          <div class="row">
+              
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-left"></div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5">
+                  <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">02</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>IELTS</h5>
+                              <p><small>The International English Language Testing System (IELTS) is designed to help you work, study or migrate to a country where English is the native language. </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-r d-none d-md-block"></div>
+                  </div>
+              </div>
+  
+          </div>
+          <!-- ============ step 3 =========== -->
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">03</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>Apply In University/Collage</h5>
+                              <p><small>Choose where you want to go and what you want to study.</small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-l d-none d-md-block"></div>
+                  </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-right d-none d-md-block"></div>
+              </div>
+          </div>
+          <!-- ============ step 4 =========== -->
+          <div class="row">
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-left"></div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5">
+                  <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">04</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>Obtain Offer Letter</h5>
+                              <p><small>This letter is issued by the employer after the candidate has been selected for the job following an interview. </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-r d-none d-md-block"></div>
+                  </div>
+              </div>
+              
+              
+          </div>
+
+          <!-- ============ step 5 =========== -->
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">05</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>First-Year Tuition Deposit</h5>
+                              <p><small>This deposit is non-refundable and put towards a student's total fees owing for their Initial Term. </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-l d-none d-md-block"></div>
+                  </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-right d-none d-md-block"></div>
+              </div>
+          </div>
+          <!-- ============ step 6 =========== -->
+          <div class="row">
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-left"></div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5">
+                  <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">06</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>GIC of CAD 10,000</h5>
+                              <p><small>A GIC of CAD 10,000 (approximately INR 5.95 lacs) acts as evidence of funds from the approved Canadian-based bank. </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-r d-none d-md-block"></div>
+                  </div>
+              </div>
+              
+              
+          </div>
+
+          <!-- ============ step 7 =========== -->
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">07</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>Medical</h5>
+                              <p><small>The medical examination will include a medical history review, physical examination, chest X-ray and blood tests for syphilis. </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-l d-none d-md-block"></div>
+                  </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-right d-none d-md-block"></div>
+              </div>
+          </div>
+          <!-- ============ step 8 =========== -->
+          <div class="row">
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-left"></div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5">
+                  <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">08</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>Other Visa Documents</h5>
+                              <p><small>Original passport with at least six months of remaining validity and with blank visa pages, a photocopy of the passport's data page and the photo page if it is separate. </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-r d-none d-md-block"></div>
+                  </div>
+              </div>
+              
+              
+          </div>
+
+          <!-- ============ step 9 =========== -->
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">09</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>Apply for Visa</h5>
+                              <p><small>An applicant for a visa typically needs to complete an application form, which is usually available at the embassy website of the country to which they are travelling. </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-l d-none d-md-block"></div>
+                  </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-right d-none d-md-block"></div>
+              </div>
+          </div>
+          <!-- ============ step 10 =========== -->
+          <div class="row">
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-left"></div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5">
+                  <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">10</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <!-- <h5>What is Lorem Ipsum?</h5>
+                              <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p> -->
+                              <h5>Visa Approval</h5>
+                              <p><small>Approved – You have met all the qualifications and are approved to receive a visa. </small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-r d-none d-md-block"></div>
+                  </div>
+              </div>
+              
+              
+          </div>
+          <!-- ============ step 11 =========== -->
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="process-step">
+                                  <p class="m-0 p-0">Step</p>
+                                  <h2 class="m-0 p-0">05</h2>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <h5>Fly To Canada</h5>
+                              <p><small>Enjoy Your Journey</small></p>
+                          </div>
+                      </div>
+                      <div class="process-line-l d-none d-md-block"></div>
+                  </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block"></div>
+              <div class="col-md-5 d-none d-md-block">
+                  <div class="process-point-right process-last"></div>
+              </div>
+          </div>
+          
+          <!-- ============ -->
+      </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script>
+          
+    AOS.init();
+
+    $(document).ready(function() {
+    function setEqualHeight() {
+        var windowWidth = $(window).width();
+
+        if (windowWidth <= 770) {
+            $('.row .col-md-5').css('height', 'auto');
+        } else {
+            var maxHeight = 0;
+
+            // Loop through each .col-md-5 element to find the maximum height
+            $('.row .col-md-5').each(function() {
+                var currentHeight = $(this).outerHeight();
+                if (currentHeight > maxHeight) {
+                    maxHeight = currentHeight;
+                }
+            });
+
+            // Set the maximum height to all .col-md-5 elements
+            $('.row .col-md-5').outerHeight(maxHeight);
+        }
+    }
+
+    // Initial execution
+    setEqualHeight();
+
+    // Listen for window resize and execute the function again
+    $(window).resize(function() {
+        setEqualHeight();
+    });
+});
+
+
+  //   $(document).ready(function() {
+  // var maxHeight = 0;
+  
+//   // Loop through each .col-md-5 element to find the maximum height
+//   $('.row .col-md-5').each(function() {
+//       var currentHeight = $(this).outerHeight();
+//       if (currentHeight > maxHeight) {
+//           maxHeight = currentHeight;
+//       }
+//   });
+  
+//   // Set the maximum height to all .col-md-5 elements
+//   $('.row .col-md-5').outerHeight(maxHeight);
+// });
+  </script>
+</div>
+<!-- Process Steps End -->
     <!--================ Start Feature Area =================-->
     <section class="feature_area section_gap_top title-bg">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3 text-white">Awesome Feature</h2>
-              <p>
+              <div class="one mb-3">
+                <h1>Partners</h1>
+              </div>
+              <p class="text-white">
                 Replenish man have thing gathering lights yielding shall you
               </p>
             </div>
@@ -159,7 +559,7 @@
             <div class="single_feature">
               <div class="icon"><span class="flaticon-student"></span></div>
               <div class="desc">
-                <h4 class="mt-3 mb-2">Scholarship Facility</h4>
+                <h4 class="mt-3 mb-2">Student Visa </h4>
                 <p>
                   One make creepeth, man bearing theira firmament won't great
                   heaven
@@ -172,7 +572,7 @@
             <div class="single_feature">
               <div class="icon"><span class="flaticon-book"></span></div>
               <div class="desc">
-                <h4 class="mt-3 mb-2">Sell Online Course</h4>
+                <h4 class="mt-3 mb-2">Tourist Visa</h4>
                 <p>
                   One make creepeth, man bearing theira firmament won't great
                   heaven
@@ -185,7 +585,7 @@
             <div class="single_feature">
               <div class="icon"><span class="flaticon-earth"></span></div>
               <div class="desc">
-                <h4 class="mt-3 mb-2">Global Certification</h4>
+                <h4 class="mt-3 mb-2">Immigration Visa</h4>
                 <p>
                   One make creepeth, man bearing theira firmament won't great
                   heaven
@@ -198,13 +598,17 @@
     </section>
     <!--================ End Feature Area =================-->
 
+        
     <!--================ Start Testimonial Area =================-->
     <div class="testimonial_area section_gap" style="padding: 80px 0 0 0;">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title" style="margin-bottom: 0;">
-              <h2 class="mb-3">Client say about me</h2>
+              <div class="one mb-4">
+                <h1> Our Client say !</h1>
+            </div>
+              <h2 class="mb-3"></h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -214,10 +618,10 @@
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
-            <div class="text-center">
+            <!-- <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
                 <h1 class="mb-5">Our Students Say!</h1>
-            </div>
+            </div> -->
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
@@ -366,32 +770,44 @@
     </div>
     <!--================ End Testimonial Area =================-->
 
-    <!--================ Start footer Area  =================-->
-     <!-- Footer Start -->
-     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
+       <!-- Footer Start -->
+       <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- <div class="container py-5"> -->
+            <div class="row g-5" style="margin: auto; max-width: 1500px;">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="">About Us</a>
+                    <img src="/img/logo.webp" style="max-width: 100%;" height="100px" alt="">
+                    <div class="my-3 px-3">
+                    &nbsp;1. One To One Visa Consultation</br>
+                    &nbsp;2. Free Visa Applying Assisstance</br>
+                    &nbsp;3. 100% Transparency
+                </div>
+                    <!-- <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">FAQs & Help</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="student-visa.html">Student Visa </a>
+                    <a class="btn btn-link" href="">Tourist Visa</a>
+                    <a class="btn btn-link" href="">Permanent Residency</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
+                    <!-- <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Gallery</h4>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
@@ -413,32 +829,36 @@
                             <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
+                </div> -->
+                <div class="col-lg-3 col-md-6" style="margin: auto;">
+                    <div class="d-flex pt-2" style="justify-content: space-evenly;">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- <h4 class="text-white mb-3">Newsletter</h4>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
         <div class="container">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">Surefire Universal Visas</a>, All Right Reserved.
 
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
+                            <a href="index.html">Home</a>
+                            <a href="contact.html">Contact</a>
+                            <!-- <a href="">Help</a>
+                            <a href="">FQAs</a> -->
                         </div>
                     </div>
                 </div>
@@ -446,7 +866,6 @@
         </div>
     </div>
     <!-- Footer End -->
-    <!--================ End footer Area  =================-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

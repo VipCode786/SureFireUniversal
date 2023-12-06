@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Education</title>
+    <title>Student Visa</title>
+    <link rel="icon" href="img/logo_bar.png" type="image/png" />
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +15,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
+    <link rel="stylesheet" href="css/aboutUs.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -26,6 +29,10 @@
     <link rel="stylesheet" href="css/courses.css">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+      <!-- Icon Font Stylesheet -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -34,7 +41,8 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 <!-- Spinner Start -->
-<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+ <!-- Spinner Start -->
+ <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
         <span class="sr-only">Loading...</span>
     </div>
@@ -44,46 +52,77 @@
 
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="width: 190px;">
+        <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
+        <img src="./img/logo.webp" alt="" height="100%">
     </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <button type="button" class="navbar-toggler me-1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="index.html" class="nav-item nav-link ">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="courses.html" class="nav-item nav-link">Courses</a>
+            <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Visa Services</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="team.html" class="dropdown-item">Our Team</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    <a href="404.html" class="dropdown-item">404 Page</a>
+                    <a href="student-visa.html" class="dropdown-item active">Student Visa</a>
+                    <a href="" class="dropdown-item">Tourist Visa</a>
+                    <a href="" class="dropdown-item">Permanent Residency</a>
                 </div>
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
+        <div class="frame-3 px-4">
+            <a class="group-1" href="tel:+91 9891146941">
+              <div class="ellipse-1"></div>
+              <svg
+                class="material-symbols-call"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.95 21.5C17.8667 21.5 15.8083 21.046 13.775 20.138C11.7417 19.23 9.89167 17.9423 8.225 16.275C6.55833 14.6083 5.271 12.7583 4.363 10.725C3.455 8.69167 3.00067 6.63333 3 4.55C3 4.25 3.1 4 3.3 3.8C3.5 3.6 3.75 3.5 4.05 3.5H8.1C8.33333 3.5 8.54167 3.57933 8.725 3.738C8.90833 3.89667 9.01667 4.084 9.05 4.3L9.7 7.8C9.73333 8.06667 9.725 8.29167 9.675 8.475C9.625 8.65833 9.53333 8.81667 9.4 8.95L6.975 11.4C7.30833 12.0167 7.704 12.6123 8.162 13.187C8.62 13.7617 9.12433 14.316 9.675 14.85C10.1917 15.3667 10.7333 15.846 11.3 16.288C11.8667 16.73 12.4667 17.134 13.1 17.5L15.45 15.15C15.6 15 15.796 14.8877 16.038 14.813C16.28 14.7383 16.5173 14.7173 16.75 14.75L20.2 15.45C20.4333 15.5167 20.625 15.6377 20.775 15.813C20.925 15.9883 21 16.184 21 16.4V20.45C21 20.75 20.9 21 20.7 21.2C20.5 21.4 20.25 21.5 19.95 21.5Z"
+                  fill="#9A1D8A"
+                />
+              </svg>
+            </a>
+            <div class="frame-2">
+              <div class="talk-to-an-expert">Talk to an Expert</div>
+              <a class="_91-98911-46941" href="tel:+91 9891146941">+91 98911 46941</a>
+            </div>
+          </div>
         <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->
    
 
-    <!-- bradcam_area_start  -->
-    <div class="bradcam_area breadcam_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="bradcam_text">
-                        <h3>Our Courses</h3>
-                    </div>
+     <!--================Home Banner Area =================-->
+     <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="banner_content text-center">
+                  <h2>About Us</h2>
+                  <div class="page_link">
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">Student Visa</a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- bradcam_area_end  -->
+      </section>
+      <!--================End Home Banner Area =================-->
+  
 
     <!-- popular_program_area_start  -->
     <div class="popular_program_area section__padding program__page">
@@ -91,11 +130,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section_title text-center">
-                        <h3>Popular Program</h3>
+                        <div class="one mb-4">
+                            <h1>Student Visa Facilities</h1>
+                          </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12">
                     <nav class="custom_tabs text-center">
                         <div class="nav" id="nav-tab" role="tablist">
@@ -106,27 +147,27 @@
                         </div>
                     </nav>
                 </div>
-            </div>
+            </div> -->
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/program/1.png" alt="">
+                                    <img src="img/carousel-1.jpg" alt="">
                                 </div>
                                 <div class="program__content">
-                                    <span>Agriculture</span>
-                                    <h4>Chemical engneering</h4>
+                                    <span>Canada</span>
+                                    <h4>Engneering</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                                    <a href="#" class="boxed-btn5">Apply NOw</a>
+                                    <a href="contact.html" class="boxed-btn5">Apply NOw</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/program/2.png" alt="">
+                                    <img src="img/carousel-1.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     <span>Agriculture</span>
@@ -139,7 +180,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/program/3.png" alt="">
+                                    <img src="img/carousel-1.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     <span>Agriculture</span>
@@ -152,7 +193,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/program/1.png" alt="">
+                                    <img src="img/carousel-1.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     <span>Agriculture</span>
@@ -165,7 +206,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/program/2.png" alt="">
+                                    <img src="img/carousel-1.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     <span>Agriculture</span>
@@ -178,7 +219,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
                                 <div class="program_thumb">
-                                    <img src="img/program/3.png" alt="">
+                                    <img src="img/carousel-1.jpg" alt="">
                                 </div>
                                 <div class="program__content">
                                     <span>Agriculture</span>
@@ -441,31 +482,44 @@
     </div>
     <!-- popular_program_area_end -->
 
-     <!-- Footer Start -->
-     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- <div class="container py-5"> -->
+            <div class="row g-5" style="margin: auto; max-width: 1500px;">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="">About Us</a>
+                    <img src="/img/logo.webp" style="max-width: 100%;" height="100px" alt="">
+                    <div class="my-3 px-3">
+                    &nbsp;1. One To One Visa Consultation</br>
+                    &nbsp;2. Free Visa Applying Assisstance</br>
+                    &nbsp;3. 100% Transparency
+                </div>
+                    <!-- <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">FAQs & Help</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="student-visa.html">Student Visa </a>
+                    <a class="btn btn-link" href="">Tourist Visa</a>
+                    <a class="btn btn-link" href="">Permanent Residency</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
+                    <!-- <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Gallery</h4>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
@@ -487,32 +541,36 @@
                             <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
+                </div> -->
+                <div class="col-lg-3 col-md-6" style="margin: auto;">
+                    <div class="d-flex pt-2" style="justify-content: space-evenly;">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- <h4 class="text-white mb-3">Newsletter</h4>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
         <div class="container">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">Surefire Universal Visas</a>, All Right Reserved.
 
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
+                            <a href="index.html">Home</a>
+                            <a href="contact.html">Contact</a>
+                            <!-- <a href="">Help</a>
+                            <a href="">FQAs</a> -->
                         </div>
                     </div>
                 </div>

@@ -87,6 +87,7 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+    
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -290,6 +291,7 @@
     position: relative;
     display: inline-block;
     color: var(--title);
+    margin-bottom: 15px;
   }
   .one h1{
     color: var(--title);
@@ -666,12 +668,24 @@
 /* body{
     background: #eee;
 } */
+
+.work-process .row {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .work-process .row .col-md-5 {
+    display: flex;
+  }
+  
+
 .process-box{
     background: #fff;
     padding: 10px;
     border-radius: 15px;
     position: relative;
     box-shadow: 2px 2px 7px 0 #00000057;
+    flex-grow: 1;
 }
 .process-left:after{
         content: "";
@@ -713,6 +727,8 @@
     top: -26px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: -6px 8px 0px 0px #00000014;
+        max-height: 100px;
+
 }
 .process-point-right{
     background: #ffffff;
@@ -723,19 +739,19 @@
     box-shadow: 0 0 0px 4px #5c5c5c;
     margin: auto 0;
     position: absolute;
-    bottom: 40px;
+    bottom: 65px;
     left: -63px;
 }
 .process-point-right:before{
     content: "";
-    height: 130px;
+    height: 180px;
     width: 11px;
     background: #5c5c5c;
     display: inline-grid;
-    transform: rotate(36deg);
+    transform: rotate(30deg);
     position: relative;
     left: -50px;
-    top: -0px;
+    top: 5px;
 }
 .process-point-left{
     background: #ffffff;
@@ -746,19 +762,19 @@
     box-shadow: 0 0 0px 4px #5c5c5c;
     margin: auto 0;
     position: absolute;
-    bottom: 40px;
+    bottom: 65px;
     right: -93px;
 }
 .process-point-left:before {
     content: "";
-    height: 144px;
+    height: 180px;
     width: 11px;
     background: #5c5c5c;
     display: inline-grid;
-    transform: rotate(-38deg);
+    transform: rotate(331deg);
     position: relative;
     left: 50px;
-    top: 0px;
+    top: 5px;
 
 }
 
@@ -806,7 +822,7 @@
     z-index: 9;
     width: 146px;
     right: -168px;
-    top: 62px;
+    top: 81px;
 }
 .process-line-r{
     background: #005DA1;
@@ -819,7 +835,7 @@
     width: 22%;
     left: -26%;
 
-    top: 62px;
+    top: 81px;
     /* z-index: 9; */
     width: 22%;
     left: -26%;
@@ -837,17 +853,17 @@
         box-shadow: 0 0 0px 4px #5c5c5c;
         margin: auto 0;
         position: absolute;
-        bottom: 40px;
+        bottom: 81px;
         left: -63px;
         /* z-index: 1; */
     }
     .process-point-right:before{
         content: "";
-        height: 144px;
+        height: 207px;
         width: 11px;
         background: #5c5c5c;
         display: inline-grid;
-        transform: rotate(38deg);
+        transform: rotate(22deg);
         position: relative;
         left: -40px;
         top: -10px;
@@ -862,17 +878,17 @@
         box-shadow: 0 0 0px 4px #5c5c5c;
         margin: auto 0;
         position: absolute;
-        bottom: 40px;
+        bottom: 81px;
         right: -80px;
         /* z-index: 1; */
     }
     .process-point-left:before {
         content: "";
-        height: 130px;
+        height: 207px;
         width: 11px;
         background: #5c5c5c;
         display: inline-grid;
-        transform: rotate(-38deg);
+        transform: rotate(160deg);
         position: relative;
         left: 38px;
         top: 0px;
@@ -920,8 +936,8 @@
        
         z-index: 9;
         width: 146px;
-        right: -168px;
-        top: 62px;
+        right: -165px;
+        top: 91px;
     }
     .process-line-r{
         background: #005DA1;
@@ -930,7 +946,7 @@
         width: 136px;
         left: -153px;
     
-        top: 62px;
+        top: 91px;
         z-index: 9;
         width: 23%;
         left: -27%;
@@ -949,17 +965,17 @@
         box-shadow: 0 0 0px 4px #5c5c5c;
         margin: auto 0;
         position: absolute;
-        bottom: 65px;
+        bottom: 111px;
         left: -43px;
         /* z-index: 1; */
     }
     .process-point-right:before{
         content: "";
-        height: 184px;
+        height: 259px;
         width: 11px;
         background: #5c5c5c;
         display: inline-grid;
-        transform: rotate(28deg);
+        transform: rotate(21deg);
         position: relative;
         left: -40px;
         top: -10px;
@@ -974,17 +990,17 @@
         box-shadow: 0 0 0px 4px #5c5c5c;
         margin: auto 0;
         position: absolute;
-        bottom: 65px;
+        bottom: 111px;
         right: -60px;
         /* z-index: 1; */
     }
     .process-point-left:before {
         content: "";
-        height: 175px;
+        height: 249px;
         width: 11px;
         background: #5c5c5c;
         display: inline-grid;
-        transform: rotate(331deg);
+        transform: rotate(342deg);
         position: relative;
         left: 38px;
         top: 0px;
@@ -1033,7 +1049,7 @@
         /* z-index: 9; */
         width: 110px;
         right: -128px;
-        top: 82px;
+        top: 111px;
     }
     .process-line-r{
         background: #005DA1;
@@ -1042,7 +1058,7 @@
         width: 136px;
         left: -153px;
     
-        top: 82px;
+        top: 111px;
         z-index: 9;
         width: 24%;
     left: -29%;
@@ -1062,17 +1078,17 @@
         box-shadow: 0 0 0px 4px #5c5c5c;
         margin: auto 0;
         position: absolute;
-        bottom: 80px;
+        bottom: 135px;
         left: -28px;
         /* z-index: 1; */
     }
     .process-point-right:before{
         content: "";
-        height: 207px;
+        height: 317px;
         width: 11px;
         background: #5c5c5c;
         display: inline-grid;
-        transform: rotate(28deg);
+        transform: rotate(17deg);
         position: relative;
         left: -40px;
         top: -10px;
@@ -1087,17 +1103,17 @@
         box-shadow: 0 0 0px 4px #5c5c5c;
         margin: auto 0;
         position: absolute;
-        bottom: 80px;
+        bottom: 135px;
         right: -36px;
         /* z-index: 1; */
     }
     .process-point-left:before {
         content: "";
-        height: 195px;
+        height: 291px;
         width: 11px;
         background: #5c5c5c;
         display: inline-grid;
-        transform: rotate(331deg);
+        transform: rotate(343deg);
         position: relative;
         left: 38px;
         top: 0px;
@@ -1146,7 +1162,7 @@
         /* z-index: 9; */
         width: 80px;
     right: -101px;
-    top: 91px;
+    top: 131px;
     }
     .process-line-r{
         background: #005DA1;
@@ -1155,7 +1171,7 @@
         width: 136px;
         left: -153px;
     
-        top: 91px;
+        top: 131px;
         z-index: 9;
         width: 27%;
     left: -34%;
