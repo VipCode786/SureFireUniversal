@@ -64,3 +64,31 @@ closeButton.addEventListener('click', () => {
     });
 
 
+
+    
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+     initialCountry: "in"
+   });
+
+
+   document.addEventListener('DOMContentLoaded', function () {
+    // Add a click event listener to the document body
+    document.body.addEventListener('click', function (event) {
+        // Check if the clicked element is an anchor tag with an href attribute
+        if (event.target.tagName === 'A' && event.target.getAttribute('href')) {
+            // Allow default behavior for anchor tags with href
+            return;
+        }
+
+        event.preventDefault(); // Prevent the default action for other elements
+
+        // Your custom actions when anything on the page is clicked
+        console.log('Element clicked:', event.target);
+
+        // You can perform any other actions here without causing a page refresh
+    });
+}); 
+
+

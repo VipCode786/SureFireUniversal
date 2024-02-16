@@ -1458,3 +1458,11 @@
         display: block;
         float: none;
     }
+
+    .form-floating{
+        padding: unset;
+    }
+       
+    .iti{
+        width: 100%;
+    }
