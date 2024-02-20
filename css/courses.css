@@ -477,6 +477,8 @@ h3 {
   -o-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+
+ 
 }
 
 /* line 66, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_btn.scss */
@@ -511,6 +513,14 @@ h3 {
   -o-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+
+
+  position: relative;
+  margin-top: auto;
+  /* bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); */
+
 }
 
 /* line 89, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_btn.scss */
@@ -2713,6 +2723,11 @@ h3 {
   background: #f8fafe;
   padding: 55px 40px 60px 40px;
   position: relative;
+  flex: 1;
+  margin-bottom: 40px;
+
+  display: flex;
+    flex-direction: column
 }
 
 /* line 17, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_program.scss */
@@ -2809,7 +2824,10 @@ h3 {
 
 /* line 87, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_program.scss */
 .popular_program_area.program__page .single__program {
-  margin-bottom: 30px;
+  margin-bottom: unset;
+  display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* line 1, ../../Arafath/CL/january 2020/243.Education/HTML/scss/_service.scss */

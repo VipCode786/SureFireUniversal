@@ -8,21 +8,20 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href="img/logo_bar.png" type="image/png" />
-    <title>Canada PR Visa</title>
+    <title>Dependent Visa</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
     <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="/css/themify-icons.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/aboutUs.css" />
     <link rel="stylesheet" href="css/style.css" />
-     <!-- style from index.html -->
+    <link rel="stylesheet" href="css/aboutUs.css" />
+
+    <!-- style from index.html -->
     
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,11 +35,11 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-<!-- Customized Bootstrap Stylesheet -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-<link
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
     />
@@ -48,121 +47,301 @@
 
 
     <style>
+
+.feature_area {
+    padding-bottom: 50px;
+}
+
+.section_gap_top {
+    padding-top: 49px;
+}
+
+.main_title {
+    text-align: center;
+    margin-bottom: 25px;
+}
         .dropdown-toggle::after {
             height: auto;
 
         }
 
+        .our-services .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensure equal height by stretching items */
+}
+
+.service-box {
+    height: 100%; /* Make sure each service-box takes up the full height */
+    margin-bottom: 20px; /* Add some space between service-box elements */
+}
+
+.service-box .row {
+    height: 100%; /* Make sure each row takes up the full height */
+}
+
+.col-md-6 {
+   
+    margin-bottom: 25px;
+}
+
+.steps-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .step {
+            width: calc(33.33% - 20px);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+      
+
+        strong {
+            color: #2741bf;
+        }
+
+
+        .infographic-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .infographic {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         th, td {
+            padding: 15px;
             border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #3498db;
+            color: #fff;
         }
 
-        .process-line-r {
-            top: 63px;
+        td {
+            background-color: #fff;
         }
 
-        .process-line-l {
-            top: 71px;
-        }
 
-        .process-point-right{
-            bottom: 54px;
-        }
+        .flex-step{
+  /* font-family: "Roboto", sans-serif; */
+  /* background: linear-gradient(to right, #8e9eab, #eef2f3); */
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
 
-        .process-point-right:before {
-            height: 149px;
-            left: -45px;
-        }
+        .card-wrapper {
+  --color-primary: #00768b;
+  --color-secondary: #01a188;
+  --box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.5);
+  width: 200px;
+}
+.card-header {
+  width: 90%;
+  align-items: stretch; /* Stretch to accommodate content height */
 
-        .process-point-left:before {
-            height: 162px;
-            top: 1px;
-        }
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15px;
+  border-top-left-radius: 70px;
+  z-index: 2;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+.card-header:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 20%;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  transform: rotate(45deg);
+  z-index: 1;
+}
 
-        .process-right:after {
-            top: 37%;
-        }
+.card-header i {
+  font-size: 40px;
+  color: var(--color-primary);
+}
+.card-header h1,
+.card-header h2 {
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.card-header h1 {
+  font-size: 18px;
+}
+.card-header h2 {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.card-header p {
+  font-size: 12px;
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 12px;
 
-        .remove-before::before{
-            content: none;
-        }
+}
+.card-footer {
+  width: 100%;
+  height: 250px;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  margin-top: -150px;
+  border-radius: 5px 5px 70px 0px;
+  color: #fff;
+  overflow: hidden;
+}
+.card-footer .footer-content-wrap {
+  padding: 0 30px 10px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.card-footer .footer-text-wrap {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+}
+.card-footer i {
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.card-footer h1 {
+  font-size: 60px;
+  line-height: 0.85;
+  font-weight: 400;
+}
+.card-footer p {
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+/*set card color ///////*/
+
+.card-wrapper.one1 {
+  --color-primary: #45b649;
+  --color-secondary: #dce35b;
+}
+.card-wrapper.two {
+  --color-primary: #fc4a1a;
+  --color-secondary: #f7b733;
+}
+.card-wrapper.three {
+  --color-primary: #7b920a;
+  --color-secondary: #add100;
+}
+.card-wrapper.four {
+  --color-primary: #000046;
+  --color-secondary: #1cb5e0;
+}
+
     </style>
+
   </head>
 
   <body>
+    <!--================ Start Header Menu Area =================-->
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+          <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+  <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="width: 190px;">
-            <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
-            <img src="./img/logo.webp" alt="" height="100%">
-        </a>
-        <button type="button" class="navbar-toggler me-1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link ">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Visa Services</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="student-visa.html" class="dropdown-item active" >Student Visa</a>
-                        <a href="tourist-visa.html" class="dropdown-item">Tourist Visa</a>
-                        <a href="canada-pr.html" class="dropdown-item">Permanent Residency</a>
-                        <a href="dependent-visa.html" class="dropdown-item">Dependent Visa</a>
-                    </div>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="width: 190px;">
+          <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
+          <img src="./img/logo.webp" alt="" height="100%">
+      </a>
+      <button type="button" class="navbar-toggler me-1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+              <a href="index.html" class="nav-item nav-link ">Home</a>
+              <a href="about.html" class="nav-item nav-link active">About</a>
+              <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Visa Services</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="student-visa.html" class="dropdown-item">Student Visa</a>
+                    <a href="tourist-visa.html" class="dropdown-item">Tourist Visa</a>
+                    <a href="canada-pr.html" class="dropdown-item">Permanent Residency</a>
+                    <a href="dependent-visa.html" class="dropdown-item">Dependent Visa</a>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <div class="frame-3 px-4">
-                <a class="group-1" href="tel:+91 9891146941">
-                  <div class="ellipse-1"></div>
-                  <svg
-                    class="material-symbols-call"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.95 21.5C17.8667 21.5 15.8083 21.046 13.775 20.138C11.7417 19.23 9.89167 17.9423 8.225 16.275C6.55833 14.6083 5.271 12.7583 4.363 10.725C3.455 8.69167 3.00067 6.63333 3 4.55C3 4.25 3.1 4 3.3 3.8C3.5 3.6 3.75 3.5 4.05 3.5H8.1C8.33333 3.5 8.54167 3.57933 8.725 3.738C8.90833 3.89667 9.01667 4.084 9.05 4.3L9.7 7.8C9.73333 8.06667 9.725 8.29167 9.675 8.475C9.625 8.65833 9.53333 8.81667 9.4 8.95L6.975 11.4C7.30833 12.0167 7.704 12.6123 8.162 13.187C8.62 13.7617 9.12433 14.316 9.675 14.85C10.1917 15.3667 10.7333 15.846 11.3 16.288C11.8667 16.73 12.4667 17.134 13.1 17.5L15.45 15.15C15.6 15 15.796 14.8877 16.038 14.813C16.28 14.7383 16.5173 14.7173 16.75 14.75L20.2 15.45C20.4333 15.5167 20.625 15.6377 20.775 15.813C20.925 15.9883 21 16.184 21 16.4V20.45C21 20.75 20.9 21 20.7 21.2C20.5 21.4 20.25 21.5 19.95 21.5Z"
-                      fill="#9A1D8A"
-                    />
-                  </svg>
-                </a>
-                <div class="frame-2">
-                  <div class="talk-to-an-expert">Talk to an Expert</div>
-                  <a class="_91-98911-46941" href="tel:+91 9891146941">+91 98911 46941</a>
-                </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <div class="frame-3 px-4">
+              <a class="group-1" href="tel:+91 9891146941">
+                <div class="ellipse-1"></div>
+                <svg
+                  class="material-symbols-call"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.95 21.5C17.8667 21.5 15.8083 21.046 13.775 20.138C11.7417 19.23 9.89167 17.9423 8.225 16.275C6.55833 14.6083 5.271 12.7583 4.363 10.725C3.455 8.69167 3.00067 6.63333 3 4.55C3 4.25 3.1 4 3.3 3.8C3.5 3.6 3.75 3.5 4.05 3.5H8.1C8.33333 3.5 8.54167 3.57933 8.725 3.738C8.90833 3.89667 9.01667 4.084 9.05 4.3L9.7 7.8C9.73333 8.06667 9.725 8.29167 9.675 8.475C9.625 8.65833 9.53333 8.81667 9.4 8.95L6.975 11.4C7.30833 12.0167 7.704 12.6123 8.162 13.187C8.62 13.7617 9.12433 14.316 9.675 14.85C10.1917 15.3667 10.7333 15.846 11.3 16.288C11.8667 16.73 12.4667 17.134 13.1 17.5L15.45 15.15C15.6 15 15.796 14.8877 16.038 14.813C16.28 14.7383 16.5173 14.7173 16.75 14.75L20.2 15.45C20.4333 15.5167 20.625 15.6377 20.775 15.813C20.925 15.9883 21 16.184 21 16.4V20.45C21 20.75 20.9 21 20.7 21.2C20.5 21.4 20.25 21.5 19.95 21.5Z"
+                    fill="#9A1D8A"
+                  />
+                </svg>
+              </a>
+              <div class="frame-2">
+                <div class="talk-to-an-expert">Talk to an Expert</div>
+                <a class="_91-98911-46941" href="tel:+91 9891146941">+91 98911 46941</a>
               </div>
-            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+            </div>
+          <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+      </div>
+  </nav>
+  <!-- Navbar End -->
+    <!--================ End Header Menu Area =================-->
+
     <!--================Home Banner Area =================-->
     <section class="banner_area">
       <div class="banner_inner d-flex align-items-center">
@@ -171,11 +350,11 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div class="banner_content text-center">
-                <h2></h2>
+                <h2>Dependent Visa</h2>
                 <div class="page_link">
                   <a href="index.html">Home</a>
-                  <!-- <a href="tourist-visa.html">Tourist Visa</a> -->
-                  <a href="">Canada PR </a>
+                  <a href="">Services</a>
+                  <a href="dependent-visa.html">Dependent Visa</a>
                 </div>
               </div>
             </div>
@@ -185,132 +364,607 @@
     </section>
     <!--================End Home Banner Area =================-->
 
-    <!--================ Start Course Details Area =================-->
-    <section class="course_details_area section_gap">
+    <!--================ Start About Area =================-->
+    <div class="container-xxl py-5">
+      <div class="container">
+          <div class="row g-5">
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                  <div class="position-relative h-100">
+                      <img class="img-fluid position-absolute w-100 h-100" src="img/immigration.jpg" alt="" style="object-fit: contain;">
+                  </div>
+              </div>
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                  <div class="one">
+                      <h1>Why Choose Canada for Permanent Residency (PR)?</h1>
+                  </div>
+                  <!-- <h4 class="section-title bg-white text-start  pe-3 my-3">Experience of over 4 years best Consultant in Delhi.</h4> -->
+                  <!-- <h1 class="mb-4">Welcome to eLEARNING</h1> -->
+                  <p class="mb-4">Canada continues to be a top destination for aspiring permanent residents, and for good reason.</p>
+                  <h3>Pathways to PR</h3>
+                  <p>Diverse immigration programs: Canada offers various pathways to PR, catering to skilled workers, entrepreneurs, family members, refugees, and more. This flexibility increases your chances of finding a suitable program.</p>
+              
+                  <p>No points-based system for some programs: Unlike many countries, some Canadian programs (e.g., spousal sponsorship) don't rely on a competitive point system, simplifying the process for eligible applicants.</p>
+              
+                  <!-- <p class="mb-4">Additionally, it enables spouses, children, or other dependents to participate in the cultural, social, and economic aspects of the host country, promoting integration and enhancing overall well-being.
+                  </p>
+                  <h4>Canada spouse visa </h4>
+                  <p class="mb-4">Choosing Canada for a spouse visa can be a compelling option for several reasons, with recent statistics reflecting a positive environment for applicants.</p> -->
+                  <!-- <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-6 d-flex align-items-center">
+                      <i style="font-size: 104px;" class="fab fa-bitcoin text-primary me-2"></i>
+                      <p class="mb-0" style="font-size: 24px;">Skilled Instructors</p>
+                  </div>
+                  
+                  <div class="col-sm-6 d-flex align-items-center">
+                    <i style="font-size: 104px;" class="fab fa-bitcoin text-primary me-2"></i>
+                    <p class="mb-0" style="font-size: 24px;">Skilled Instructors</p>
+                </div>
+                <div class="col-sm-6 d-flex align-items-center">
+                  <i style="font-size: 104px;" class="fab fa-bitcoin text-primary me-2"></i>
+                  <p class="mb-0" style="font-size: 24px;">Skilled Instructors</p>
+              </div>
+              <div class="col-sm-6 d-flex align-items-center">
+                <i style="font-size: 104px;" class="fab fa-bitcoin text-primary me-2"></i>
+                <p class="mb-0" style="font-size: 24px;">Skilled Instructors</p>
+            </div>
+                      
+                  </div> -->
+
+                  
+                  <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
+              </div>
+          </div>
+      </div>
+    </div>
+    <!--================ End About Area =================-->
+    <section class="feature_area section_gap_top title-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 course_details_left">
-                    <!-- <div class="main_image">
-                        <img class="img-fluid" src="img/courses/course-details.jpg" alt="">
+          <div class="row justify-content-center">
+            <div class="col-lg-5">
+              <div class="main_title">
+                <div class="one mb-3">
+                  <h1>Economic Opportunities</h1>
+                </div>
+                <!-- <p class="text-white">
+                  Replenish man have thing gathering lights yielding shall you
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="row g-sm-3 gy-2">
+            <div class="col-lg-4 col-md-6">
+              <div class="single_feature">
+                <div class="icon"><span class="flaticon-student"></span></div>
+                <div class="desc">
+                  <h4 class="mt-3 mb-2">Strong and stable economy
+                  </h4>
+                  <p>
+                    Canada boasts a robust economy with low unemployment rates, offering ample job opportunities across various sectors.
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="single_feature">
+                <div class="icon"><span class="flaticon-book"></span></div>
+                <div class="desc">
+                  <h4 class="mt-3 mb-2">High-tech hub</h4>
+                  <p>
+                    Canada is a leader in innovation and technology, attracting tech talent with lucrative career prospects. 
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="single_feature">
+                <div class="icon"><span class="flaticon-earth"></span></div>
+                <div class="desc">
+                  <h4 class="mt-3 mb-2">Entrepreneurial ecosystem</h4>
+                  <p>
+                    Canada promotes a supportive environment for entrepreneurs, with government programs and funding opportunities available.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="feature_area section_gap_top title-bg" style="background-color: #f2f2ff;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5">
+              <div class="main_title">
+                <div class="one mb-3">
+                  <h1>SUPPORTING LATEST STATISTICS</h1>
+                </div>
+                <!-- <p class="text-white">
+                  Replenish man have thing gathering lights yielding shall you
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="row g-sm-3 gy-2">
+            <div class="col-lg-4 col-md-6">
+              <div class="single_feature">
+                <div class="icon"><span class="flaticon-student"></span></div>
+                <div class="desc">
+                  <h4 class="mt-3 mb-2">Immigration targets
+                  </h4>
+                  <p>
+                    Canada aims to welcome over 430,000 new permanent residents in 2024, highlighting its commitment to attracting skilled individuals and families.
+                                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="single_feature">
+                <div class="icon"><span class="flaticon-book"></span></div>
+                <div class="desc">
+                  <h4 class="mt-3 mb-2">PR application approval rates</h4>
+                  <p>Approval rates vary depending on the program, but overall, around 70% of applications are successful.</p>
+
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="single_feature">
+                <div class="icon"><span class="flaticon-earth"></span></div>
+                <div class="desc">
+                  <h4 class="mt-3 mb-2">Job market performance</h4>
+                  <p>
+                    Canada's unemployment rate sits at 5.1% (November 2023), indicating a strong demand for skilled labor.                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+
+      <div class="container-xxl py-5">
+        <div class="container">
+            <div class="d-flex flex-row-reverse g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <div class="position-relative h-100 d-flex flex-row-reverse">
+                        <dl>
+                            <dt>How long does the PR process take?</dt>
+                            <dd>Varies, but typically 6-12 months.</dd>
+                        
+                            <dt>What are the costs involved?</dt>
+                            <dd>Application fees, medical exam, police clearance, etc.</dd>
+                        
+                            <dt>Can I bring my family with me?</dt>
+                            <dd>Yes, through family sponsorship programs.</dd>
+                        
+                            <dt>Can I work while my application is being processed?</dt>
+                            <dd>Yes, if you have a valid work permit.</dd>
+                        
+                            <dt>What are the language requirements?</dt>
+                            <dd>You must meet certain English or French language proficiency levels.</dd>
+                        </dl>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <!-- <div class="one">
+                        <h1>Why Choose Canada for Permanent Residency (PR)?</h1>
                     </div> -->
-                    <div class="content_wrapper">
-                        <h1>Canada PR Process</h1>
-
-    <h2>Why Choose Canada for Permanent Residency (PR)?</h2>
-    <p>Canada continues to be a top destination for aspiring permanent residents, and for good reason.</p>
-
-    <h2>Pathways to PR</h2>
-    <p>Diverse immigration programs: Canada offers various pathways to PR, catering to skilled workers, entrepreneurs, family members, refugees, and more. This flexibility increases your chances of finding a suitable program.</p>
-
-    <p>No points-based system for some programs: Unlike many countries, some Canadian programs (e.g., spousal sponsorship) don't rely on a competitive point system, simplifying the process for eligible applicants.</p>
-
-    <h2>Economic Opportunities</h2>
-    <p>Strong and stable economy: Canada boasts a robust economy with low unemployment rates, offering ample job opportunities across various sectors.</p>
-    <p>High-tech hub: Canada is a leader in innovation and technology, attracting tech talent with lucrative career prospects.</p>
-    <p>Entrepreneurial ecosystem: Canada promotes a supportive environment for entrepreneurs, with government programs and funding opportunities available.</p>
-
-    <h2>SUPPORTING LATEST STATISTICS- </h2>
-    <p>Immigration targets- Canada aims to welcome over 430,000 new permanent residents in 2024, highlighting its commitment to attracting skilled individuals and families.</p>
-    <p>PR application approval rates- Approval rates vary depending on the program, but overall, around 70% of applications are successful.</p>
-    <p>Job market performance- Canada's unemployment rate sits at 5.1% (November 2023), indicating a strong demand for skilled labor.</p>
-
-
-    <h2>Canada PR Benefits</h2>
-    <ul>
-        <li>Live and work anywhere in Canada</li>
-        <li>Free healthcare and education for eligible residents</li>
-        <li>Strong social safety net</li>
-        <li>High quality of life</li>
-        <li>Multicultural and welcoming society</li>
-    </ul>
-
-    <h2>Benefits of Choosing Surefire:</h2>
+                    <!-- <h4 class="section-title bg-white text-start  pe-3 my-3">Experience of over 4 years best Consultant in Delhi.</h4> -->
+                    <!-- <h1 class="mb-4">Welcome to eLEARNING</h1> -->
+                    <!-- <p class="mb-4">Canada continues to be a top destination for aspiring permanent residents, and for good reason.</p> -->
+                    <h3>Benefits of Choosing Surefire:</h3>
     <ul>
         <li>Increased success rate: Maximize your chances of PR approval with expert guidance and personalized strategies.</li>
         <li>Reduced stress and anxiety: Leave the complexities to Surefire and focus on your dream of Canadian life.</li>
         <li>Time-saving efficiency: Smoothen the process and avoid costly delays with professional assistance.</li>
         <li>Peace of mind: Gain confidence knowing your PR journey is in experienced hands.</li>
     </ul>
-
     <p>Let Surefire be your trusted partner on your path to Canadian PR. Contact us today for a free consultation and start your journey with confidence!</p>
 
-   
+                    <!-- <p class="mb-4">Additionally, it enables spouses, children, or other dependents to participate in the cultural, social, and economic aspects of the host country, promoting integration and enhancing overall well-being.
+                    </p>
+                    <h4>Canada spouse visa </h4>
+                    <p class="mb-4">Choosing Canada for a spouse visa can be a compelling option for several reasons, with recent statistics reflecting a positive environment for applicants.</p> -->
+                    <!-- <div class="row gy-2 gx-4 mb-4">
+                      <div class="col-sm-6 d-flex align-items-center">
+                        <i style="font-size: 104px;" class="fab fa-bitcoin text-primary me-2"></i>
+                        <p class="mb-0" style="font-size: 24px;">Skilled Instructors</p>
                     </div>
+                    
+                    <div class="col-sm-6 d-flex align-items-center">
+                      <i style="font-size: 104px;" class="fab fa-bitcoin text-primary me-2"></i>
+                      <p class="mb-0" style="font-size: 24px;">Skilled Instructors</p>
+                  </div>
+                  <div class="col-sm-6 d-flex align-items-center">
+                    <i style="font-size: 104px;" class="fab fa-bitcoin text-primary me-2"></i>
+                    <p class="mb-0" style="font-size: 24px;">Skilled Instructors</p>
                 </div>
-
-
-                <div class="col-lg-4 right-contents">
-
-                    <h2>1. Check Eligibility:</h2>
-                    <ul>
-                    <li>Use the online tool to see if you qualify for a program.</li>
-                    <li>Factors include age, education, language skills, work experience, and adaptability.</li>
-                    <a href="#" class="call-to-action-button">CALL TO ACTION BUTTON FOR ELIGIBILITY CHECK</a>
-                </ul>
-
-
-                    <h2>2. Choose a Program:</h2>
-                    <ul>
-                        <li>Express Entry: For skilled workers, professionals, and tradespeople.</li>
-                        <li>Family Sponsorship: For those with family in Canada.</li>
-                        <li>Business Immigration: For entrepreneurs and investors.</li>
-                        <li>Provincial Nominee Programs: For those with skills needed in specific provinces.</li>
-                    </ul>
-                
-                    <h2>3. Express Entry:</h2>
-                    <ul>
-                        <li>Create a profile and provide information about yourself.</li>
-                        <li>Receive a score based on the Comprehensive Ranking System (CRS).</li>
-                        <li>Highest-ranked candidates receive Invitations to Apply (ITAs).</li>
-                    </ul>
-
-                    <h2>4. Apply for PR:</h2>
-                    <ul>
-                        <li>Submit a complete application with supporting documents.</li>
-                        <li>Pay processing fees.</li>
-                        <li>Get a medical exam and police clearance.</li>
-                    </ul>
-                
-                    <h2>5. Receive PR:</h2>
-                    <ul>
-                    <li>If approved, you'll receive a Confirmation of Permanent Residence (COPR).</li>
-                    <li>You can then immigrate to Canada and enjoy the benefits of PR status.</li>
-                    </ul>
-                
-                    <h3>Common  FAQs</h3>
-                    <dl>
-                        <dt>How long does the PR process take?</dt>
-                        <dd>Varies, but typically 6-12 months.</dd>
+                <div class="col-sm-6 d-flex align-items-center">
+                  <i style="font-size: 104px;" class="fab fa-bitcoin text-primary me-2"></i>
+                  <p class="mb-0" style="font-size: 24px;">Skilled Instructors</p>
+              </div>
+                        
+                    </div> -->
+  
                     
-                        <dt>What are the costs involved?</dt>
-                        <dd>Application fees, medical exam, police clearance, etc.</dd>
-                    
-                        <dt>Can I bring my family with me?</dt>
-                        <dd>Yes, through family sponsorship programs.</dd>
-                    
-                        <dt>Can I work while my application is being processed?</dt>
-                        <dd>Yes, if you have a valid work permit.</dd>
-                    
-                        <dt>What are the language requirements?</dt>
-                        <dd>You must meet certain English or French language proficiency levels.</dd>
-                    </dl>
-                    
-                    <p style="color: #03030e;">For more detailed information and guidance, please refer to the official Canadian government website: <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html" target="_blank" >Canada Immigration Website</a></p>
-                    
-                   
+                    <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
                 </div>
             </div>
         </div>
-    </section>
-    <!--================ End Course Details Area =================-->
+      </div>
+    <!-- Start Services -->
+  
+    <!-- End Services -->
+    <!-- <section class="feature_area section_gap_top title-bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="main_title">
+              <div class="one mb-3">
+                <h1>Services</h1>
+              </div>
+              <p class="text-white">
+                Replenish man have thing gathering lights yielding shall you
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single_feature">
+              <div class="icon"><span class="flaticon-student"></span></div>
+              <div class="desc">
+                <h4 class="mt-3 mb-2">Spousal sponsorships
+                </h4>
+                <p>
+                  88,564 applications were processed in 2022, indicating the program's popularity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="single_feature">
+              <div class="icon"><span class="flaticon-book"></span></div>
+              <div class="desc">
+                <h4 class="mt-3 mb-2">Approval rates</h4>
+                <p>
+                  Surefire Universal Visa's immigration consultants are here to assist you with the application procedure, documents, and other pertinent concerns for visiting Visa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="single_feature">
+              <div class="icon"><span class="flaticon-earth"></span></div>
+              <div class="desc">
+                <h4 class="mt-3 mb-2">Immigration targets</h4>
+                <p>
+                  Canada aims to welcome over 430,000 new permanent residents in 2024, highlighting its commitment to attracting newcomers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+<!-- Services/Offer Start -->
+<!-- <div class="container-xxl py-5 pt-0">
 
 
-    <!-- Process Steps Start -->
-<!--  -->
-  <!-- Process Steps End -->
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="one mb-4">
+                <h1>Recent statistics</h1>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center align-items-stretch">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-1.jpg" alt="">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="contact.html" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                style="border-radius: 0 30px 30px 0;">Join Now</a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-1">
+                        <h3 class="mb-0">Spousal sponsorships</h3>
+                       
+                        <h5 class="mb-4">
+                          88,564 applications were processed in 2022, indicating the program's popularity.
 
-  <!--Start Sticky Icon-->
-  <div class="sticky-icon">
+                        </h5>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-2.jpg" alt="">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                style="border-radius: 0 30px 30px 0;">Join Now</a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-1">
+                        <h3 class="mb-0">Approval rates</h3>
+                       
+                        <h5 class="mb-4">Surefire Universal Visa's immigration consultants are here to assist you
+                            with the application procedure, documents, and other pertinent concerns for visiting
+                            Visa.</h5>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-3.jpg" alt="">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                style="border-radius: 0 30px 30px 0;">Join Now</a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-1">
+                        <h3 class="mb-0">Immigration targets</h3>
+                        
+                        <h5 class="mb-4">Canada aims to welcome over 430,000 new permanent residents in 2024, highlighting its commitment to attracting newcomers.</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Services/Offer End -->
+
+
+<!-- Process Steps Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="section">
+        <h2>ELIGIBILITY PROCESS - (How Surefire Helps)</h2>
+        <div class="steps-container">
+          <div class="flex-step">
+
+
+
+            <!-- Step 1 -->
+            <div class="card-wrapper one1">
+             <div class="card-header" style="border-top-left-radius: 70px ">
+               <!-- <i class="fas fa-cloud-download-alt"></i> -->
+               <h3>Check Eligibility:</h3>
+                    <ul>
+                    <li><p>Use the online tool to see if you qualify for a program.</p></li>
+                    <li><p>Factors include age, education, language skills, work experience, and adaptability.</p></li>
+                    <!-- <a href="contact.html" class="call-to-action-button">Contact Us</a> -->
+                </ul>
+               <!-- <p class="card-header-text3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p> -->
+             </div>
+             <div class="card-footer" style="border-bottom-right-radius: 70px ">
+               <div class="footer-content-wrap">
+                 <div class="footer-text-wrap">
+                     <h3>Step 01</h3>
+         
+                 </div>
+                 <i class="fas fa-angle-double-right"></i>
+               </div>
+             </div>
+           </div>
+               
+               <!-- Step 2 -->
+               <div class="card-wrapper two">
+                 <div class="card-header" style="border-top-left-radius: 70px ">
+                   <!-- <i class="fas fa-cloud-download-alt"></i> -->
+                   <h3>Choose a Program:</h3>
+                   <ul>
+                       <li><p>Express Entry: For skilled workers, professionals, and tradespeople.</p></li>
+                       <li><p>Family Sponsorship: For those with family in Canada.</p></li>
+                       <li><p>Business Immigration: For entrepreneurs and investors.</p></li>
+                       <li><p>Provincial Nominee Programs: For those with skills needed in specific provinces.</p></li>
+                   </ul>
+                                 </div>
+                 <div class="card-footer" style="border-bottom-right-radius: 70px ">
+                   <div class="footer-content-wrap">
+                     <div class="footer-text-wrap">
+                         <h3>Step 02</h3>
+         
+                     </div>
+                     <i class="fas fa-angle-double-right"></i>
+                   </div>
+                 </div>
+               </div>
+               
+               <!-- Step 3 -->
+               <div class="card-wrapper three">
+                 <div class="card-header" style="border-top-left-radius: 70px ">
+                    <h3>Express Entry:</h3>
+                    <ul>
+                        <li><p>Create a profile and provide information about yourself.</p></li>
+                        <li><p>Receive a score based on the Comprehensive Ranking System (CRS).</p></li>
+                        <li><p>Highest-ranked candidates receive Invitations to Apply (ITAs).</p></li>
+                    </ul>
+                 </div>
+                 <div class="card-footer" style="border-bottom-right-radius: 70px ">
+         
+                   <div class="footer-content-wrap">
+                     <div class="footer-text-wrap">
+                       
+                       <h3>Step 03</h3>
+                     </div>
+                     <i class="fas fa-angle-double-right"></i>
+                   </div>
+                 </div>
+               </div>
+               
+               <!-- Step 4 -->
+               <div class="card-wrapper four">
+                 <div class="card-header" style="border-top-left-radius: 70px ">
+                     <!-- <i class="fas fa-grin-squint"></i> -->
+                     <h3>Apply for PR:</h3>
+                     <ul>
+                         <li><p>Submit a complete application with supporting documents.</p></li>
+                         <li><p>Pay processing fees.</p></li>
+                         <li><p>Get a medical exam and police clearance.</p></li>
+                     </ul>        
+                       </div>
+           <div class="card-footer" style="border-bottom-right-radius: 70px ">
+             <div class="footer-content-wrap">
+                     <div class="footer-text-wrap">
+                         <h3>Step 04</h3>
+         
+                     </div>
+                     <i class="fas fa-angle-double-right"></i>
+                   </div>
+                 </div>
+               </div>
+               
+               <!-- Step 5 -->
+               <div class="card-wrapper five">
+                 <div class="card-header" style="border-top-left-radius: 70px ">
+                     <!-- <i class="fas fa-check-circle"></i> -->
+                     <h3>Receive PR:</h3>
+                     <ul>
+                     <li><p>If approved, you'll receive a Confirmation of Permanent Residence (COPR).</p></li>
+                     <li><p>You can then immigrate to Canada and enjoy the benefits of PR status.</p></li>
+                     </ul>           </div>
+           <div class="card-footer" style="border-bottom-right-radius: 70px ">
+             <div class="footer-content-wrap">
+                     <div class="footer-text-wrap">
+                         <h3>Step 05</h3>
+         
+                     </div>
+                     <i class="fas fa-angle-double-right"></i>
+                   </div>
+                 </div>
+               </div>
+             </div>  
+            <!-- <div class="step">
+                <h3>Step 1: Assess Eligibility</h3>
+                <p><strong>Free initial consultation:</strong> Our experts assess your situation and confirm eligibility.</p>
+                <p><strong>Detailed guidance:</strong> We explain the requirements and answer your questions clearly.</p>
+                <p><strong>Document checklist:</strong> We provide a personalized list of required documents based on your unique case.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 2: Gather Documents</h3>
+                <p><strong>Document review and assistance:</strong> We ensure your documents are complete, accurate, and meet IRCC standards.</p>
+                <p><strong>Translation services:</strong> If needed, we offer professional translation of documents by certified translators.</p>
+                <p><strong>Guidance on obtaining specific documents:</strong> We help you understand what documents are needed and how to acquire them efficiently.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 3: Sponsor Your Spouse</h3>
+                <p><strong>Application preparation:</strong> We assist you in filling out the sponsorship application forms accurately and efficiently.</p>
+                <p><strong>Financial assessment:</strong> We guide you in demonstrating your financial ability to sponsor your spouse.</p>
+                <p><strong>Communication with IRCC:</strong> We handle communication with IRCC on your behalf, ensuring timely responses and addressing any concerns.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 4: Your Spouse Applies for Permanent Residency</h3>
+                <p><strong>Application preparation:</strong> We guide your spouse through the application process and ensure all required documents are submitted correctly.</p>
+                <p><strong>Travel arrangements:</strong> We assist with visa applications and travel logistics if your spouse is applying from abroad.</p>
+                <p><strong>Interview preparation:</strong> If required, we provide mock interviews and coaching to help your spouse feel confident and prepared.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 5: Processing and Decision</h3>
+                <p><strong>Case monitoring:</strong> We track your application status and keep you informed of any updates or requirements.</p>
+                <p><strong>Communication with IRCC:</strong> We represent you and your spouse before IRCC, effectively communicating on your behalf.</p>
+                <p><strong>Addressing requests for additional information:</strong> We help you prepare thorough responses to any requests from IRCC.</p>
+            </div> -->
+        </div>
+
+
+        <p style="color: #03030e; text-align: center; margin-top: 100px;">For more detailed information and guidance, please refer to the official Canadian government website: <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html" target="_blank" >Canada Immigration Website</a></p>
+
+      
+    </div>
+</div>
+   
+ 
+
+</div>
+<!-- Process Steps End -->
+ 
+     
+
+    <!--================ Start Testimonial Area =================-->
+    <!-- <div class="testimonial_area section_gap" style="padding: 80px 0 0 0;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="main_title" style="margin-bottom: 0;">
+              <div class="one mb-4">
+                <h1> Our Client say !</h1>
+            </div>
+              <h2 class="mb-3"></h2>
+              <p>
+                Replenish man have thing gathering lights yielding shall you
+              </p>
+            </div>
+          </div>
+        </div>
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+          
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    </div> -->
+    <!--================ End Testimonial Area =================-->
+<!--Start Sticky Icon-->
+<div class="sticky-icon">
     <a href="https://www.instagram.com/?hl=en" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
     <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
     <a href="https://aboutme.google.com/u/0/?referer=gplus" class="Google"><i class="fab fa-google-plus-g"> </i>
@@ -319,210 +973,121 @@
     <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a>
 </div>
 <!--End Sticky Icon-->
-   <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <!-- <div class="container py-5"> -->
-        <div class="row g-5" style="margin: auto; max-width: 1500px;">
-            <div class="col-lg-3 col-md-6">
-                <img src="/img/logo.webp" style="max-width: 100%;" height="100px" alt="">
-                <div class="my-3 px-3">
-                &nbsp;1. One To One Visa Consultation</br>
-                &nbsp;2. Free Visa Applying Assisstance</br>
-                &nbsp;3. 100% Transparency
-            </div>
-                <!-- <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Privacy Policy</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" href="">FAQs & Help</a> -->
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Quick Link</h4>
-                <a class="btn btn-link" href="about.html">About Us</a>
-                <a class="btn btn-link" href="contact.html">Contact Us</a>
-                <a class="btn btn-link" href="student-visa.html">Student Visa </a>
-                <a class="btn btn-link" href="tourist-visa.html">Tourist Visa</a>
-                <a class="btn btn-link" href="permanent-residency.html">Permanent Residency</a>
-                <a class="btn btn-link" href="dependent-visa.html">Dependent Visa</a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Contact</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Yc Space ,Top Floor, Plot No. 94 Dwarka Sec -13,Opposite Metro Station, near Radisson Blu Hotel, New Delhi Dwarka, New Delhi, Delhi 110078</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9891146941</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@surevisa.co.in</p>
-                <!-- <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div> -->
-            </div>
-            <!-- <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Gallery</h4>
-                <div class="row g-2 pt-2">
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-                    </div>
+       <!-- Footer Start -->
+       <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- <div class="container py-5"> -->
+            <div class="row g-5" style="margin: auto; max-width: 1500px;">
+                <div class="col-lg-3 col-md-6">
+                    <img src="/img/logo.webp" style="max-width: 100%;" height="100px" alt="">
+                    <div class="my-3 px-3">
+                    &nbsp;1. One To One Visa Consultation</br>
+                    &nbsp;2. Free Visa Applying Assisstance</br>
+                    &nbsp;3. 100% Transparency
                 </div>
-            </div> -->
-            <div class="col-lg-3 col-md-6" style="margin: auto;">
-                <div class="d-flex pt-2" style="justify-content: space-evenly;">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <!-- <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a> -->
                 </div>
-                <!-- <h4 class="text-white mb-3">Newsletter</h4>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="student-visa.html">Student Visa </a>
+                    <a class="btn btn-link" href="tourist-visa.html">Tourist Visa</a>
+                    <a class="btn btn-link" href="permanent-residency.html">Permanent Residency</a>
+                    <a class="btn btn-link" href="dependent-visa.html">Dependent Visa</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Yc Space ,Top Floor, Plot No. 94 Dwarka Sec -13,Opposite Metro Station, near Radisson Blu Hotel, New Delhi Dwarka, New Delhi, Delhi 110078</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9891146941</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@surevisa.co.in</p>
+                    <!-- <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
                 </div> -->
+                <div class="col-lg-3 col-md-6" style="margin: auto;">
+                    <div class="d-flex pt-2" style="justify-content: space-evenly;">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div> -->
+                </div>
             </div>
-        </div>
-    <!-- </div> -->
-    <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Surefire Universal Visas</a>, All Right Reserved.
+        <!-- </div> -->
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Surefire Universal Visas</a>, All Right Reserved.
 
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-menu">
-                        <a href="index.html">Home</a>
-                        <a href="contact.html">Contact</a>
-                        <!-- <a href="">Help</a>
-                        <a href="">FQAs</a> -->
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="contact.html">Contact</a>
+                            <!-- <a href="">Help</a>
+                            <a href="">FQAs</a> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
-    <!-- <footer class="footer-area section_gap">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-2 col-md-6 single-footer-widget">
-                  <h4>Top Products</h4>
-                  <ul>
-                    <li><a href="#">Managed Website</a></li>
-                    <li><a href="#">Manage Reputation</a></li>
-                    <li><a href="#">Power Tools</a></li>
-                    <li><a href="#">Marketing Service</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 single-footer-widget">
-                  <h4>Quick Links</h4>
-                  <ul>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Brand Assets</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 single-footer-widget">
-                  <h4>Features</h4>
-                  <ul>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Brand Assets</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 single-footer-widget">
-                  <h4>Resources</h4>
-                  <ul>
-                    <li><a href="#">Guides</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Experts</a></li>
-                    <li><a href="#">Agencies</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 single-footer-widget">
-                  <h4>Newsletter</h4>
-                  <p>You can trust us. we only send promo offers,</p>
-                  <div class="form-wrap" id="mc_embed_signup">
-                    <form
-                      target="_blank"
-                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                      method="get"
-                      class="form-inline"
-                    >
-                      <input
-                        class="form-control"
-                        name="EMAIL"
-                        placeholder="Your Email Address"
-                        onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Your Email Address'"
-                        required=""
-                        type="email"
-                      />
-                      <button class="click-btn btn btn-default">
-                        <span>subscribe</span>
-                      </button>
-                      <div style="position: absolute; left: -5000px;">
-                        <input
-                          name="b_36c4fd991d266f23781ded980_aefe40901a"
-                          tabindex="-1"
-                          value=""
-                          type="text"
-                        />
-                      </div>
-      
-                      <div class="info"></div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="row footer-bottom d-flex justify-content-between">
-                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                </p>
-                <div class="col-lg-4 col-sm-12 footer-social">
-                  <a href="#"><i class="ti-facebook"></i></a>
-                  <a href="#"><i class="ti-twitter"></i></a>
-                  <a href="#"><i class="ti-dribbble"></i></a>
-                  <a href="#"><i class="ti-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </footer> -->
-          <!--================ End footer Area  =================-->
-      
-          <!-- Optional JavaScript -->
-          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-          <script src="js/jquery-3.2.1.min.js"></script>
-          <script src="js/popper.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-          <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-          <script src="js/owl-carousel-thumb.min.js"></script>
-          <script src="js/jquery.ajaxchimp.min.js"></script>
-          <script src="js/mail-script.js"></script>
-          <!--gmaps Js-->
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-          <script src="js/gmaps.min.js"></script>
-          <script src="js/theme.js"></script>
+    <!-- Footer End -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel-thumb.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
 
 
-          <!-- js from index.html -->
+    <!-- js from index.html -->
     
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -558,15 +1123,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <div class="form-floating col-md-12">
-                            <input id="phone" type="tel" name="phone"  style="padding-left: 50px;"/>    
-                        </div>
+                      <div class="form-floating col-md-12">
+                          <input id="phone" type="tel" name="phone"  style="padding-left: 50px;"/>    
                       </div>
-                    <div class="col-md-12">
-                        <div class="form-floating col-md-12">
-                            <input id="phone" type="tel" name="phone"  style="padding-left: 50px;"/>    
-                        </div>
-                      </div>
+                    </div>
                     <div class="col-12">
                         <div class="form-floating">
                             <select name="subject" class="form-select" style="padding: 1rem 0.75rem;" aria-label="Default select example" id="subject">
@@ -636,5 +1196,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
         <script src="/js/scroll-pop-up.js"></script>
     </div>
-        </body>
-      </html>
+  </body>
+</html>

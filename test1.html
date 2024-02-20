@@ -3,104 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aboutUs.css" />
+   <style>
+    
+    .flex-step{
+  /* font-family: "Roboto", sans-serif; */
+  /* background: linear-gradient(to right, #8e9eab, #eef2f3); */
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
+        .card-wrapper {
+  --color-primary: #00768b;
+  --color-secondary: #01a188;
+  --box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.5);
+  width: 200px;
+}
+.card-header {
+  width: 90%;
+  align-items: stretch; /* Stretch to accommodate content height */
 
-        .section {
-            padding: 60px 0;
-            text-align: center;
-        }
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15px;
+  border-top-left-radius: 70px;
+  z-index: 2;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+.card-header:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 20%;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  transform: rotate(45deg);
+  z-index: 1;
+}
 
-        h2 {
-            color: #3498db;
-        }
+.card-header i {
+  font-size: 40px;
+  color: var(--color-primary);
+}
+.card-header h1,
+.card-header h2 {
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.card-header h1 {
+  font-size: 18px;
+}
+.card-header h2 {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.card-header p {
+  font-size: 12px;
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 12px;
 
-        .steps-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-            margin-top: 30px;
-        }
+}
+.card-footer {
+  width: 100%;
+  height: 250px;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  margin-top: -150px;
+  border-radius: 5px 5px 70px 0px;
+  color: #fff;
+  overflow: hidden;
+}
+.card-footer .footer-content-wrap {
+  padding: 0 30px 10px 20px;
 
-        .step {
-            width: calc(33.33% - 20px);
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.card-footer .footer-text-wrap {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+}
+.card-footer i {
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.card-footer h1 {
+  font-size: 60px;
+  line-height: 0.85;
+  font-weight: 400;
+}
+.card-footer p {
+  font-size: 12px;
+  text-transform: uppercase;
 
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
+}
+/*set card color ///////*/
 
-        strong {
-            color: #e74c3c;
-        }
+.card-wrapper.one1 {
+  --color-primary: #45b649;
+  --color-secondary: #dce35b;
+}
+.card-wrapper.two {
+  --color-primary: #fc4a1a;
+  --color-secondary: #f7b733;
+}
+.card-wrapper.three {
+  --color-primary: #7b920a;
+  --color-secondary: #add100;
+}
+.card-wrapper.four {
+  --color-primary: #000046;
+  --color-secondary: #1cb5e0;
+}
+
     </style>
     <title>Surefire Immigration</title>
 </head>
 <body>
+ 
+      
 
-    <div class="container">
-        <div class="section">
-            <h2>ELIGIBILITY PROCESS - (How Surefire Helps)</h2>
-            <div class="steps-container">
-                <!-- Step 1 -->
-                <div class="step">
-                    <h3>Step 1: Assess Eligibility</h3>
-                    <p><strong>Free initial consultation:</strong> Our experts assess your situation and confirm eligibility.</p>
-                    <p><strong>Detailed guidance:</strong> We explain the requirements and answer your questions clearly.</p>
-                    <p><strong>Document checklist:</strong> We provide a personalized list of required documents based on your unique case.</p>
-                </div>
+<div class="flex-step">
 
-                <!-- Step 2 -->
-                <div class="step">
-                    <h3>Step 2: Gather Documents</h3>
-                    <p><strong>Document review and assistance:</strong> We ensure your documents are complete, accurate, and meet IRCC standards.</p>
-                    <p><strong>Translation services:</strong> If needed, we offer professional translation of documents by certified translators.</p>
-                    <p><strong>Guidance on obtaining specific documents:</strong> We help you understand what documents are needed and how to acquire them efficiently.</p>
-                </div>
 
-                <!-- Step 3 -->
-                <div class="step">
-                    <h3>Step 3: Sponsor Your Spouse</h3>
-                    <p><strong>Application preparation:</strong> We assist you in filling out the sponsorship application forms accurately and efficiently.</p>
-                    <p><strong>Financial assessment:</strong> We guide you in demonstrating your financial ability to sponsor your spouse.</p>
-                    <p><strong>Communication with IRCC:</strong> We handle communication with IRCC on your behalf, ensuring timely responses and addressing any concerns.</p>
-                </div>
 
-                <!-- Step 4 -->
-                <div class="step">
-                    <h3>Step 4: Your Spouse Applies for Permanent Residency</h3>
-                    <p><strong>Application preparation:</strong> We guide your spouse through the application process and ensure all required documents are submitted correctly.</p>
-                    <p><strong>Travel arrangements:</strong> We assist with visa applications and travel logistics if your spouse is applying from abroad.</p>
-                    <p><strong>Interview preparation:</strong> If required, we provide mock interviews and coaching to help your spouse feel confident and prepared.</p>
-                </div>
-
-                <!-- Step 5 -->
-                <div class="step">
-                    <h3>Step 5: Processing and Decision</h3>
-                    <p><strong>Case monitoring:</strong> We track your application status and keep you informed of any updates or requirements.</p>
-                    <p><strong>Communication with IRCC:</strong> We represent you and your spouse before IRCC, effectively communicating on your behalf.</p>
-                    <p><strong>Addressing requests for additional information:</strong> We help you prepare thorough responses to any requests from IRCC.</p>
-                </div>
-            </div>
-        </div>
+   <!-- Step 2 -->
+   <div class="card-wrapper one1">
+    <div class="card-header" style="border-top-left-radius: 70px ">
+      <i class="fas fa-cloud-download-alt"></i>
+      <h3>Step 1: Assess Eligibility</h3>
+      <p><strong>Free initial consultation:</strong> Our experts assess your situation and confirm eligibility.</p>
+      <p><strong>Detailed guidance:</strong> We explain the requirements and answer your questions clearly.</p>
+      <p><strong>Document checklist:</strong> We provide a personalized list of required documents based on your unique case.</p>
+      <p></p>
+      <!-- <p class="card-header-text3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p> -->
     </div>
+    <div class="card-footer" style="border-bottom-right-radius: 70px ">
+      <div class="footer-content-wrap">
+        <div class="footer-text-wrap">
+            <h3>Step 01</h3>
+
+        </div>
+        <i class="fas fa-angle-double-right"></i>
+      </div>
+    </div>
+  </div>
+      
+      <!-- Step 2 -->
+      <div class="card-wrapper two">
+        <div class="card-header" style="border-top-left-radius: 70px ">
+          <i class="fas fa-cloud-download-alt"></i>
+          <h3>Step 2: Gather Documents</h3>
+                <p><strong>Document review and assistance:</strong> We ensure your documents are complete, accurate, and meet IRCC standards.</p>
+                <p><strong>Translation services:</strong> If needed, we offer professional translation of documents by certified translators.</p>
+                <p><strong>Guidance on obtaining specific documents:</strong> We help you understand what documents are needed and how to acquire them efficiently.</p>
+        </div>
+        <div class="card-footer" style="border-bottom-right-radius: 70px ">
+          <div class="footer-content-wrap">
+            <div class="footer-text-wrap">
+                <h3>Step 02</h3>
+
+            </div>
+            <i class="fas fa-angle-double-right"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Step 3 -->
+      <div class="card-wrapper three">
+        <div class="card-header" style="border-top-left-radius: 70px ">
+          <i class="fas fa-gamepad"></i>
+          <h3>Step 3: Sponsor Your Spouse</h3>
+          <p><strong>Application preparation:</strong> We assist you in filling out the sponsorship application forms accurately and efficiently.</p>
+          <p><strong>Financial assessment:</strong> We guide you in demonstrating your financial ability to sponsor your spouse.</p>
+          <p><strong>Communication with IRCC:</strong> We handle communication with IRCC on your behalf, ensuring timely responses and addressing any concerns.</p>
+
+        </div>
+        <div class="card-footer" style="border-bottom-right-radius: 70px ">
+
+          <div class="footer-content-wrap">
+            <div class="footer-text-wrap">
+              
+              <h3>Step 03</h3>
+            </div>
+            <i class="fas fa-angle-double-right"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Step 4 -->
+      <div class="card-wrapper four">
+        <div class="card-header" style="border-top-left-radius: 70px ">
+            <i class="fas fa-grin-squint"></i>
+          <h3>Step 4: Your Spouse Applies for Permanent Residency</h3>
+          <p><strong>Application preparation:</strong> We guide your spouse through the application process and ensure all required documents are submitted correctly.</p>
+          <p><strong>Travel arrangements:</strong> We assist with visa applications and travel logistics if your spouse is applying from abroad.</p>
+          <p><strong>Interview preparation:</strong> If required, we provide mock interviews and coaching to help your spouse feel confident and prepared.</p>
+  </div>
+  <div class="card-footer" style="border-bottom-right-radius: 70px ">
+    <div class="footer-content-wrap">
+            <div class="footer-text-wrap">
+                <h3>Step 04</h3>
+
+            </div>
+            <i class="fas fa-angle-double-right"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Step 5 -->
+      <div class="card-wrapper five">
+        <div class="card-header" style="border-top-left-radius: 70px ">
+            <i class="fas fa-check-circle"></i>
+          <h3>Step 5: Processing and Decision</h3>
+          <p><strong>Case monitoring:</strong> We track your application status and keep you informed of any updates or requirements.</p>
+          <p><strong>Communication with IRCC:</strong> We represent you and your spouse before IRCC, effectively communicating on your behalf.</p>
+          <p><strong>Addressing requests for additional information:</strong> We help you prepare thorough responses to any requests from IRCC.</p>
+  </div>
+  <div class="card-footer" style="border-bottom-right-radius: 70px ">
+    <div class="footer-content-wrap">
+            <div class="footer-text-wrap">
+                <h3>Step 05</h3>
+
+            </div>
+            <i class="fas fa-angle-double-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>   
 
 </body>
 </html>
