@@ -122,6 +122,22 @@
             flex-basis: 100%;
             margin-bottom: 10px;
         }
+@media screen and (max-width:500px) {
+    .image-text-container{
+        flex-direction: column;
+    }
+    .image-text-container img,.image-text-container p{
+      max-width: 90%;
+    }
+
+    .image-text-container.reverse {
+                flex-direction: column-reverse;
+            }
+    /* .content_wrapper:nth-child(even) {
+    flex-direction: column-reverse;
+} */
+}
+        
     </style>
   </head>
 
@@ -220,52 +236,54 @@
                         <h2>WHY NEW ZEALAND?</h2>
 
                         <h4>Breathtaking Nature-</h4>
-                        <div class="image-text-container">   
-                            <img src="image_url1" alt="New Zealand wilderness: Fiordland National Park">
+                        <div class="image-text-container">
+
+                            <img src="/img/New_Zealand_images/New_Zealand_wilderness_ Fiordland_National_Park.png" alt="New Zealand wilderness: Fiordland National Park">
                             <p>80% of New Zealand's land is untouched wilderness, offering stunning landscapes from snow-capped mountains to geothermal wonders and golden beaches.</p>
                         </div>
                     
                         <h4>4 National Parks:</h4>
                         <div class="image-text-container">  
                             <p>Tongariro, Te Urewera, Fiordland, and Aoraki/Mount Cook, all UNESCO World Heritage Sites, showcase the country's diverse natural beauty.</p>
-                            <img src="image_url2" alt="New Zealand National Parks: Tongariro, Te Urewera, Fiordland, Aoraki/Mount Cook">
+                           
+                            <img src="img/New_Zealand_images/new_zealand_national_park.png" alt="New Zealand National Parks: Tongariro, Te Urewera, Fiordland, Aoraki/Mount Cook">
                         </div>
 
                             <!-- Repeat the pattern for other sections -->
                             <h4>Adventure Playground-</h4>
     <div class="image-text-container">
-        <img src="image_url3" alt="New Zealand outdoor activities: bungee jumping, white-water rafting, hiking, skiing">
+        <img src="/img/New_Zealand_images/new_zealand_bungee_jumping.png" alt="New Zealand outdoor activities: bungee jumping, white-water rafting, hiking, skiing">
         <p>Ranked #1 in the world for outdoor activities by Lonely Planet in 2023, New Zealand offers everything from bungee jumping and white-water rafting to hiking and skiing.</p>
     </div>
 
     <h4>Over 30 Great Walks:</h4>
     <div class="image-text-container">
   <p>Explore diverse trails like the Milford Track, Tongariro Alpine Crossing, and Routeburn Track, showcasing stunning scenery and challenging terrains.</p>
-        <img src="image_url4" alt="New Zealand Great Walks: Milford Track, Tongariro Alpine Crossing, Routeburn Track">
+        <img src="/img/New_Zealand_images/new_zealand_great_walks.png" alt="New Zealand Great Walks: Milford Track, Tongariro Alpine Crossing, Routeburn Track">
     </div>
 
     <h4>Warm Kiwi Welcome-</h4>
     <div class="image-text-container">
-        <img src="image_url5" alt="New Zealand people welcoming tourists">
+        <img src="img/New_Zealand_images/new_zealand_people_welcoming_tourists.png" alt="New Zealand people welcoming tourists">
         <p>New Zealand consistently ranks high in global happiness surveys, with its friendly and welcoming population often referred to as "Kiwis."</p>
     </div>
 
     <h4>Compact and Diverse-</h4>
     <div class="image-text-container">
         <p>Experience diverse landscapes and activities within short distances-from glaciers and mountains to beaches and vineyards, all easily accessible with efficient transportation networks.</p>
-        <img src="image_url6" alt="New Zealand cities: Auckland, Wellington">
+        <img src="/img/New_Zealand_images/new_zealand_cities.png" alt="New Zealand cities: Auckland, Wellington">
     </div>
 
     <h4>Small country size-</h4>
     <div class="image-text-container">
-        <img src="image_url7" alt="New Zealand map highlighting its compact size">
+        <img src="img/New_Zealand_images/new_zealand_map_highligtning_it's_compact_size.png" alt="New Zealand map highlighting its compact size">
         <p>Small country size: New Zealand's compact nature allows you to cover a lot of ground during your visit, maximizing your adventure.</p>
     </div>
 
     <h4>Sustainable Tourism Leader-</h4>
     <div class="image-text-container">
         <p>New Zealand prioritizes sustainable tourism practices, focusing on protecting its natural environment and cultural heritage.</p>
-        <img src="image_url8" alt="New Zealand eco-friendly tourism: accommodation, activities">
+        <img src="img/New_Zealand_images/new_zealand_eco_friendly_tourism.png" alt="New Zealand eco-friendly tourism: accommodation, activities">
     </div>
 
     <!-- <h4>1. Breathtaking Nature-</h4>
@@ -316,6 +334,19 @@
     <p>Post-Approval Assistance: Helping you with arrival formalities and insurance options.</p>
 
                     </div>
+                    <script>
+                        // Add the following JavaScript code
+                        document.addEventListener("DOMContentLoaded", function () {
+                            var containers = document.querySelectorAll('.image-text-container');
+                
+                            containers.forEach(function (container, index) {
+                                // Check if the index is even
+                                if (index % 2 === 1) {
+                                    container.classList.add('reverse');
+                                }
+                            });
+                        });
+                    </script>
                 </div>
 
 
