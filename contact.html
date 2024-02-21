@@ -48,6 +48,140 @@
             margin-bottom: 25px;
 
         }
+
+        /* Add this CSS for the custom popup/modal styles */
+
+.custom-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0321be;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+#thankyoucontent {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.popup-content {
+    /* Customize the content styling as needed */
+    text-align: center;
+}
+
+.go-home a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.30s linear 0s;
+}
+
+.wrapper-1{
+  width:100%;
+  height:100vh;
+  display: flex;
+flex-direction: column;
+}
+.wrapper-2{
+  padding: 30px;
+  text-align:center;
+}
+.wrapper-2 h1{
+  font-family: 'Raleway', Arial Black, Sans-Serif;
+  font-size:4em;
+  font-weight: 900;
+  letter-spacing:3px;
+  color: #fafafa;
+  margin:0;
+  margin-top: 40px;
+  margin-bottom:40px;
+}
+.wrapper-2 p{
+  margin:0;
+  font-size:1.3em;
+  color:#fafafa;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing:1px;
+  line-height: 1.5;
+}
+.go-home{
+  background:#9A1D8A;
+  border:none;
+  padding: 25px 30px;
+  margin: 30px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.go-home:hover{
+  opacity: 0.9;
+}
+.go-home a{
+  font-family: 'Raleway', Arial Black;
+  font-size: 1rem;
+  font-weight: 700!important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+.footer-like{
+  margin-top: auto; 
+  background: rgb(31,38,130);
+  padding:6px;
+  text-align:center;
+}
+.footer-like p{
+  margin:0;
+  padding:4px;
+  color:#fafafa;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing:1px;
+}
+.footer-like p a{
+  text-decoration:none;
+  color:#5892FF;
+  font-weight: 600;
+}
+
+.footer-like p a:hover{
+  color:#FFF;
+ }
+
+@media (min-width:360px){
+  .wrapper-2 h1{
+    font-size:4.5em;
+  }
+  .go-home{
+    margin-bottom:20px;
+  }
+}
+
+@media (min-width:600px){
+  #thankyoucontent{
+  max-width:1000px;
+  margin:0 auto;
+}
+  .wrapper-1{
+  height: initial;
+  max-width:620px;
+  margin:0 auto;
+  margin-top:50px;
+  }
+  
+  
+}
+
+/* You may want to add more styling to make it visually appealing */
+
     </style>
     <!--  -->
 </head>
@@ -203,7 +337,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     
-                    <form >
+                    <form id="yourFormId" >
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
@@ -305,14 +439,125 @@
                             </div> -->
 
                             <div class="col-12">
-                                <div class="btn btn-primary w-100 py-3" type="submit" onclick="validateCaptcha(event); return false;" >Send Message</div>
+                                <div class="btn btn-primary w-100 py-3" type="button" 
+                                
+                                onclick="validateCaptchaAndSubmit();"
+                                >Send Message</div>
                             </div>
                         </div>
                     </form>
                     
-                    <script src="/js/captcha.js">
-                       
-                    </script>
+                    <!-- <script src="/js/captcha.js">
+                       onclick="validateCaptcha(event); return false;"
+                    </script> -->
+<!-- Add this script after the form in your HTML -->
+
+<script>
+    // Function to show the custom pop-up
+    function showCustomPopup() {
+        console.log("show custom popup")
+        var popup = document.getElementById("thankyoucontent");
+        popup.style.display = "block";
+    }
+
+    // Function to handle form submission
+    function handleSubmit() {
+        // Get the selected value from the "Select Services" dropdown
+        var selectedService = document.getElementById("subject").value;
+        console.log("selectesservice",selectedService)
+        // Check if the selected service is "B2B Services"
+        if (selectedService === "B2B Services") {
+            // Display the custom pop-up
+            showCustomPopup();
+        } else {
+            // Continue with the normal form submission or other actions
+            // ...
+            alert("form submitted successfully")
+            // For example, you can submit the form programmatically
+            // document.forms["yourFormId"].submit();
+        }
+    }
+
+
+    let captcha = new Array();
+
+                        function createCaptcha() {
+                        const activeCaptcha = document.getElementById("captcha");
+                        for (q = 0; q < 6; q++) {
+                            if (q % 2 == 0) {
+                            captcha[q] = String.fromCharCode(Math.floor(Math.random() * 26 + 65));
+                            } else {
+                            captcha[q] = Math.floor(Math.random() * 10 + 0);
+                            }
+                        }
+                        theCaptcha = captcha.join("");
+                        activeCaptcha.innerHTML = `${theCaptcha}`;
+                        }
+                        createCaptcha();
+    // Function to validate captcha and submit
+    function validateCaptchaAndSubmit() {
+        // Validate captcha
+        const errCaptcha = document.getElementById("errCaptcha");
+        const reCaptcha = document.getElementById("reCaptcha");
+        recaptcha = reCaptcha.value;
+        let validateCaptcha = 0;
+        for (var z = 0; z < 6; z++) {
+            if (recaptcha.charAt(z) != captcha[z]) {
+                validateCaptcha++;
+            }
+        }
+
+        if (recaptcha == "") {
+            errCaptcha.innerHTML = "Re-Captcha must be filled";
+        } else if (validateCaptcha > 0 || recaptcha.length > 6) {
+            errCaptcha.innerHTML = "Wrong captcha";
+        } else {
+            errCaptcha.innerHTML = "Done";
+            console.log("hello")
+            // Call the handleSubmit function
+            handleSubmit();
+        }
+    }
+
+    function closeCustomPopup(){
+        var popup = document.getElementById("customPopup");
+        popup.style.display = "none";
+    }
+    // Attach the validateCaptchaAndSubmit function to the button's click event
+    document.querySelector("#yourFormId button").addEventListener("click", validateCaptchaAndSubmit);
+</script>
+
+<!-- Add this HTML for the custom pop-up/modal after your form -->
+
+<!-- <div id="customPopup" class="custom-popup">
+    <div class="popup-content">
+        <p>You selected B2B Services. Please provide additional information:</p>
+        <input type="text" id="additionalInfoInput">
+        <button onclick="submitFormWithAdditionalInfo()">Submit</button>
+        <button onclick="closeCustomPopup()">Close</button>
+    </div>
+</div> -->
+
+<div id="thankyoucontent" >
+    <div class="wrapper-1">
+       <div class="wrapper-2">
+          <img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" alt="thank-you-envelope" border="0">
+        <h1>Thank you!</h1>
+         <p>for contacting us, we will reply promptly</p> 
+         <p>once your message is received. </p>
+         <button class="go-home"><a href="index.html">
+           home page</a>
+         </button>
+       </div>
+      
+       <div class="footer-like">
+         <p>
+         </p>
+       </div>
+   </div>
+</div>
+</div>
+
 
                 
                 </div>

@@ -33,5 +33,6 @@ let captcha = new Array();
                             errCaptcha.innerHTML = "Wrong captcha";
                         } else {
                             errCaptcha.innerHTML = "Done";
+                            
                         }
                         }
