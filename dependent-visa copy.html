@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/logo_bar.png" type="image/png" />
+    
+    <title>Dependent Visa</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aboutUs.css" />
+    <link rel="stylesheet" href="css/courses.css">
+    <!-- style from index.html -->
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    
+    <style>
+        
+
+    </style>
+
+  </head>
+
+  <body>
+    <!--================ Start Header Menu Area =================-->
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+          <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+  <!-- Spinner End -->
+
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="width: 190px;">
+          <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
+          <img src="./img/logo.webp" alt="" height="100%">
+      </a>
+      <button type="button" class="navbar-toggler me-1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+              <a href="index.html" class="nav-item nav-link ">Home</a>
+              <a href="about.html" class="nav-item nav-link ">About</a>
+              <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Visa Services</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="student-visa.html" class="dropdown-item">Student Visa</a>
+                    <a href="tourist-visa.html" class="dropdown-item">Tourist Visa</a>
+                    <a href="canada-pr.html" class="dropdown-item">Permanent Residency</a>
+                    <a href="dependent-visa.html" class="dropdown-item  active">Dependent Visa</a>
+                </div>
+            </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <div class="frame-3 px-4">
+              <a class="group-1" href="tel:+91 9891146941">
+                <div class="ellipse-1"></div>
+                <svg
+                  class="material-symbols-call"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.95 21.5C17.8667 21.5 15.8083 21.046 13.775 20.138C11.7417 19.23 9.89167 17.9423 8.225 16.275C6.55833 14.6083 5.271 12.7583 4.363 10.725C3.455 8.69167 3.00067 6.63333 3 4.55C3 4.25 3.1 4 3.3 3.8C3.5 3.6 3.75 3.5 4.05 3.5H8.1C8.33333 3.5 8.54167 3.57933 8.725 3.738C8.90833 3.89667 9.01667 4.084 9.05 4.3L9.7 7.8C9.73333 8.06667 9.725 8.29167 9.675 8.475C9.625 8.65833 9.53333 8.81667 9.4 8.95L6.975 11.4C7.30833 12.0167 7.704 12.6123 8.162 13.187C8.62 13.7617 9.12433 14.316 9.675 14.85C10.1917 15.3667 10.7333 15.846 11.3 16.288C11.8667 16.73 12.4667 17.134 13.1 17.5L15.45 15.15C15.6 15 15.796 14.8877 16.038 14.813C16.28 14.7383 16.5173 14.7173 16.75 14.75L20.2 15.45C20.4333 15.5167 20.625 15.6377 20.775 15.813C20.925 15.9883 21 16.184 21 16.4V20.45C21 20.75 20.9 21 20.7 21.2C20.5 21.4 20.25 21.5 19.95 21.5Z"
+                    fill="#9A1D8A"
+                  />
+                </svg>
+              </a>
+              <div class="frame-2">
+                <div class="talk-to-an-expert">Talk to an Expert</div>
+                <a class="_91-98911-46941" href="tel:+91 9891146941">+91 98911 46941</a>
+              </div>
+            </div>
+          <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+      </div>
+  </nav>
+  <!-- Navbar End -->
+    <!--================ End Header Menu Area =================-->
+<!--================Home Banner Area =================-->
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="banner_content text-center">
+            <h2>Tourist Visa</h2>
+            <div class="page_link">
+              <a href="index.html">Home</a>
+              <a href="tourist-visa.html">Tourist Visa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+
+<!-- popular_program_area_start  -->
+<div class="popular_program_area section__padding program__page">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="section_title text-center">
+                  <div class="one mb-4">
+                      <h1>Tourist Visa Facilities</h1>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="row">
+          <div class="col-lg-12">
+              <nav class="custom_tabs text-center">
+                  <div class="nav" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Graduate                                </a>
+                      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Postgraduate </a>
+                      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">PHD Scholarships</a>
+                      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact2" role="tab" aria-controls="nav-contact" aria-selected="false">Training</a>
+                  </div>
+              </nav>
+          </div>
+      </div> -->
+      <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="10.3s">
+                      <div class="single__program">
+                          <div class="program_thumb">
+                              <img src="img/tourist_visa/Canada.png" alt="">
+                          </div>
+                          <div class="program__content">
+                              <span>Canada</span>
+                              <h4>Tourist Visa</h4>
+                              <p>Second-largest country globally.Lakes and rivers contain 20% of the world's freshwater.
+                                  Diverse wildlife and 41 National parks.</p>
+                              <a href="canada-tourist-visa.html" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                      <div class="single__program">
+                          <div class="program_thumb">
+                              <img src="img/tourist_visa/UK.png" alt="">
+                          </div>
+                          <div class="program__content">
+                              <span>UK</span>
+                              <h4>Tourist Visa</h4>
+                              <p>The United States offers a vast array of attractions, ranging from iconic landmarks like the Statue of Liberty and Grand Canyon to vibrant cities such as New York and Los Angeles. </p>
+                              <a href="uk-tourist-visa.html" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="1.1s">
+                      <div class="single__program">
+                          <div class="program_thumb">
+                              <img src="img/tourist_visa/USA.png" alt="">
+                          </div>
+                          <div class="program__content">
+                              <span>USA</span>
+                              <h4>Tourist Visa</h4>
+                              <p>The United Kingdom boasts a rich history, with landmarks like the Tower of London, Buckingham Palace, and Stonehenge.</p>
+                              <a href="usa-tourist-visa.html" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="1.7s">
+                      <div class="single__program">
+                          <div class="program_thumb">
+                              <img src="img/tourist_visa/Australia.png" alt="">
+                          </div>
+                          <div class="program__content">
+                              <span>Australia</span>
+                              <h4>Tourist Visa</h4>
+                              <p>Tourists can explore stunning natural landscapes, from the iconic Sydney Opera House to the vast Outback, offering a one-of-a-kind travel experience.</p>
+                              <a href="australia-tourist-visa.html" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="2.1s">
+                      <div class="single__program">
+                          <div class="program_thumb">
+                              <img src="img/tourist_visa/Newzealand.png" alt="">
+                          </div>
+                          <div class="program__content">
+                              <span>Newzealand</span>
+                              <h4>Tourist Visa</h4>
+                              <p>Ranked #1 in the world for outdoor activities by Lonely Planet in 2023</p>
+                              <a href="nz-tourist-visa.html" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- <div class="col-lg-4 col-md-6">
+                      <div class="single__program">
+                          <div class="program_thumb">
+                              <img src="img/carousel-1.jpg" alt="">
+                          </div>
+                          <div class="program__content">
+                              <span>Agriculture</span>
+                              <h4>Bio engneering</h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                              <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                          </div>
+                      </div>
+                  </div> -->
+              </div>
+          </div>
+          <!-- <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                          <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/carousel-1.jpg" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Chemical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/carousel-1.jpg" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Mechanical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/carousel-1.jpg" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Bio engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/carousel-1.jpg" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Chemical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/carousel-1.jpg" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Mechanical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/carousel-1.jpg" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Bio engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                          <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/3.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Chemical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/2.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Mechanical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/1.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Bio engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/3.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Chemical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/2.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Mechanical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/1.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Bio engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab">
+                          <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/2.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Chemical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/1.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Mechanical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/3.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Bio engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/2.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Chemical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/1.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Mechanical engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="single__program">
+                              <div class="program_thumb">
+                                  <img src="img/program/3.png" alt="">
+                              </div>
+                              <div class="program__content">
+                                  <span>Agriculture</span>
+                                  <h4>Bio engneering</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                  <a href="#" class="boxed-btn5">Read More &nbsp; &nbsp; <i class="ti-arrow-right ml-1"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          </div> -->
+      </div>
+  </div>
+</div>
+<div class="sticky-icon">
+    <a href="https://instagram.com/surefirevisa?igshid=OGQ5ZDc2ODk2ZA==" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+    <a href="https://www.facebook.com/profile.php?id=100088563865699&mibextid=LQQJ4d" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+    <a href="https://aboutme.google.com/u/0/?referer=gplus" class="Google" ><i class="fab fa-linkedin-in "  > </i>
+        Linkdin </a>
+ <!-- <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
+    <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
+</div>
+<!--End Sticky Icon-->
+       <!-- Footer Start -->
+       <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- <div class="container py-5"> -->
+            <div class="row g-5" style="margin: auto; max-width: 1500px;">
+                <div class="col-lg-3 col-md-6">
+                    <img src="/img/logo.webp" style="max-width: 100%;" height="100px" alt="">
+                    <div class="my-3 px-3">
+                    &nbsp;1. One To One Visa Consultation</br>
+                    &nbsp;2. Free Visa Applying Assisstance</br>
+                    &nbsp;3. 100% Transparency
+                </div>
+                    <!-- <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="student-visa.html">Student Visa </a>
+                    <a class="btn btn-link" href="tourist-visa.html">Tourist Visa</a>
+                    <a class="btn btn-link" href="permanent-residency.html">Permanent Residency</a>
+                    <a class="btn btn-link" href="dependent-visa.html">Dependent Visa</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Yc Space ,Top Floor, Plot No. 94 Dwarka Sec -13,Opposite Metro Station, near Radisson Blu Hotel, New Delhi Dwarka, New Delhi, Delhi 110078</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9891146941</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@surevisa.co.in</p>
+                    <!-- <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-3 col-md-6" style="margin: auto;">
+                    <div class="d-flex pt-2" style="justify-content: space-evenly;">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div> -->
+                </div>
+            </div>
+        <!-- </div> -->
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Surefire Universal Visas</a>, All Right Reserved.
+
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="contact.html">Contact</a>
+                            <!-- <a href="">Help</a>
+                            <a href="">FQAs</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/popper.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    
+
+    <!-- js from index.html -->
+    
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+     <script src="lib/wow/wow.min.js"></script>
+    
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <div class="scroll-show-popUp">
+        <div class="contact-form-scroll" id="contactFormScroll">
+            <button id="closeButton">x</button>
+            <h2>Contact Us</h2>
+            <form >
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            <label for="name">Your Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-floating col-md-12">
+                          <input id="phone" type="tel" name="phone"  style="padding-left: 50px;"/>    
+                      </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <select name="subject" class="form-select" style="padding: 1rem 0.75rem;" aria-label="Default select example" id="subject">
+                                <option selected>Select Services</option>
+                                <option value="Student Visa">Student Visa</option>
+                                <option value="Tourist Visa">Tousrist Visa</option>
+                                <option value="Permanent Resisdency">Permanent Resisdency</option>
+                                <option value="Dedidated Service Visa">Dedidated Service Visa</option>
+                                <option value="B2B Services">B2B Services</option>
+                              </select>
+                            <!-- <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            <label for="subject">Subject</label> -->
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <div id="captcha" class="captcha">
+                                <!-- <script>createCaptcha(); return false;</script> -->
+                            
+                            </div>
+                            <div class="restart">
+
+                                <i class="fa fa-refresh" aria-hidden="true" href="#" onclick="createCaptcha(); return false;"></i>
+
+                                <!-- <a >Change</a> -->
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="    align-items: center;
+                    display: flex;
+                    justify-content: center;">
+                        <div class="form-floating">
+                            <input
+                            type="text"
+                            name="reCaptcha"
+                            id="reCaptcha"
+                            placeholder="Type The Captcha"
+                          />
+                            
+                        </div>
+                        <div id="errCaptcha" class="errmsg"></div>
+                    </div>
+                    <!-- <div class="col-12">
+                        <div id="captcha">
+                        </div>
+                        <input type="text" placeholder="Captcha" id="cpatchaTextBox"/>
+                    </div> -->
+
+                    <div class="col-12">
+                        <div class="btn btn-primary w-100 py-3" type="submit" onclick="validateCaptcha(event); return false;" >Send Message</div>
+                    </div>
+                </div>
+            </form>
+            
+            <script src="/js/captcha.js">
+               
+            </script>
+
+        </div>
+
+        <script src="/js/scroll-pop-up.js"></script>
+    </div>
+  </body>
+</html>
