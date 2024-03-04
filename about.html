@@ -13,11 +13,7 @@
   <link rel="stylesheet" href="css/themify-icons.css" />
   <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
   <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-  <!-- main css -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/aboutUs.css" />
-  <link rel="stylesheet" href="css/style.css" />
+ 
 
 
   <!-- style from index.html -->
@@ -45,7 +41,11 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-
+ <!-- main css -->
+ <link href="css/bootstrap.css" rel="stylesheet">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/aboutUs.css" />
+ <link rel="stylesheet" href="css/style.css" />
 
   <style>
     .dropdown-toggle::after {
@@ -68,49 +68,206 @@
   <!-- Spinner End -->
 
 
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="width: 190px;">
-      <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
-      <img src="./img/logo.webp" alt="" height="100%">
-    </a>
-    <button type="button" class="navbar-toggler me-1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav ms-auto p-4 p-lg-0">
-        <a href="index.html" class="nav-item nav-link ">Home</a>
-        <a href="about.html" class="nav-item nav-link active">About</a>
-        <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Visa Services</a>
-          <div class="dropdown-menu fade-down m-0">
-            <a href="student-visa.html" class="dropdown-item">Student Visa</a>
-            <a href="tourist-visa.html" class="dropdown-item">Tourist Visa</a>
-            <a href="canada-pr.html" class="dropdown-item">Permanent Residency</a>
-            <a href="dependent-visa.html" class="dropdown-item">Dependent Visa</a>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="width: 190px;">
+          <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
+          <img src="./img/logo.webp" alt="" height="100%">
+      </a>
+      <button type="button" class="navbar-toggler me-1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- <div class="navbar-nav ms-auto p-4 p-lg-0">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target=".first-level">Visa Services</a>
+                  <div class="dropdown-menu fade-down m-0 first-level">
+                      <a href="student-visa.html" class="dropdown-item">Student Visa</a>
+                      <a href="tourist-visa.html" class="dropdown-item">Tourist Visa</a>
+                      <a href="canada-pr.html" class="dropdown-item">Permanent Residency</a>
+                      <a href="dependent-visa.html" class="dropdown-item">Dependent Visa</a>
+                      <div class="dropdown-item dropdown-submenu dropdown-submenu-1">
+                          <a class="dropdown-toggle">Submenu-1</a>
+                          <ul class="dropdown-menu submenu-1">
+                              <li class="dropdown-item">
+                                  <a href="#">Item-1</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="#">Item-2</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="#">Item-3</a>
+                              </li>
+                          </ul>
+  
+                      </div>
+
+
+                      <div class="dropdown-item dropdown-submenu dropdown-submenu-2">
+                          <a class="dropdown-toggle">Submenu-2</a>
+                          <ul class="dropdown-menu submenu-2">
+                              <li class="dropdown-item">
+                                  <a href="#">Item-1</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="#">Item-2</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="#">Item-3</a>
+                              </li>
+                          </ul>
+  
+                      </div>
+  
+                  </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div> -->
+
+          <div class="navbar-nav ms-auto p-4 p-lg-0 ">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link active">About</a>
+              <div class="nav-item dropdown d-block d-md-none">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#visaDropdown">Student Visa</a>
+                  <ul class="dropdown-menu fade-down m-0 first-level" id="visaDropdown">
+                      <!-- <ul class="dropdown-menu submenu-1"> -->
+                          <li class="dropdown-item">
+                              <a href="canada-student-visa.html">Canada</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="usa-student-visa.html">USA</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="australia-student-visa.html">Australia</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="uk-student-visa.html">UK</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="irish-student-visa.html">IRELAND</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="europe-student-visa.html">EUROPE</a>
+                          </li>
+                      <!-- </ul> -->
+                     
+                      
+                      </ul>
+              </div>
+              <div class="nav-item dropdown d-block d-md-none">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#visaDropdown">Tourist Visa</a>
+                  <ul class="dropdown-menu fade-down m-0 first-level" id="visaDropdown">
+                      
+                          <li class="dropdown-item">
+                              <a href="canada-tourist-visa.html">Canada</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="uk-tourist-visa.html">UK</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="usa-tourist-visa.html">USA</a>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="australia-tourist-visa.html">Australia</a>
+                          </li>
+                          <li class="dropdown-item ">
+                            <a href="europe-tourist-visa.html" >Europe</a>
+                        </li>
+                          <li class="dropdown-item">
+                              <a href="nz-tourist-visa.html">Newzealand</a>
+                          </li>
+                     
+                     
+                      
+                      </ul>
+              </div>
+              <a href="canada-pr.html" class="nav-item nav-link d-block d-md-none">Permanent Residency</a>
+              <a href="dependent-visa.html" class="nav-item nav-link d-block d-md-none">Dependent Visa</a>
+
+
+
+              <div class="nav-item dropdown d-none d-md-block">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#visaDropdown">Visa Services</a>
+                  <div class="dropdown-menu fade-down m-0 first-level" id="visaDropdown">
+                      <!-- <a href="student-visa.html" class="dropdown-item">Student Visa</a>
+                      <a href="tourist-visa.html" class="dropdown-item">Tourist Visa</a> -->
+                     
+                      <div class="dropdown-item dropdown-submenu dropdown-submenu-1 ">
+                          <div>Student Visa <i class="fa fa-angle-right submenu-arrow-right" >  </i></div>
+                          <ul class="dropdown-menu submenu-1">
+                              <li class="dropdown-item">
+                                  <a href="canada-student-visa.html">Canada</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="usa-student-visa.html">USA</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="australia-student-visa.html">Australia</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="uk-student-visa.html">UK</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="irish-student-visa.html">IRELAND</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="europe-student-visa.html">EUROPE</a>
+                              </li>
+                          </ul>
+  
+                      </div>
+
+                      <div class="dropdown-item dropdown-submenu dropdown-submenu-1 ">
+                          <div>Tourist Visa <i class="fa fa-angle-right submenu-arrow-right" >  </i></div>
+                          <ul class="dropdown-menu submenu-1">
+                              <li class="dropdown-item">
+                                  <a href="canada-tourist-visa.html">Canada</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="uk-tourist-visa.html">UK</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="usa-tourist-visa.html">USA</a>
+                              </li>
+                              <li class="dropdown-item">
+                                  <a href="australia-tourist-visa.html">Australia</a>
+                              </li>
+                              <li class="dropdown-item ">
+                                <a href="europe-tourist-visa.html" >Europe</a>
+                            </li>
+                              <li class="dropdown-item">
+                                  <a href="nz-tourist-visa.html">Newzealand</a>
+                              </li>
+                          </ul>
+  
+                      </div>
+                      <a href="canada-pr.html" class="dropdown-item">Permanent Residency</a>
+                      <a href="dependent-visa.html" class="dropdown-item">Dependent Visa</a>
+                  </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
-        </div>
-        <a href="contact.html" class="nav-item nav-link">Contact</a>
+          
+          <div class="frame-3 px-4">
+              <a class="group-1" href="tel:+91 9891146941">
+                  <div class="ellipse-1"></div>
+                  <svg class="material-symbols-call" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M19.95 21.5C17.8667 21.5 15.8083 21.046 13.775 20.138C11.7417 19.23 9.89167 17.9423 8.225 16.275C6.55833 14.6083 5.271 12.7583 4.363 10.725C3.455 8.69167 3.00067 6.63333 3 4.55C3 4.25 3.1 4 3.3 3.8C3.5 3.6 3.75 3.5 4.05 3.5H8.1C8.33333 3.5 8.54167 3.57933 8.725 3.738C8.90833 3.89667 9.01667 4.084 9.05 4.3L9.7 7.8C9.73333 8.06667 9.725 8.29167 9.675 8.475C9.625 8.65833 9.53333 8.81667 9.4 8.95L6.975 11.4C7.30833 12.0167 7.704 12.6123 8.162 13.187C8.62 13.7617 9.12433 14.316 9.675 14.85C10.1917 15.3667 10.7333 15.846 11.3 16.288C11.8667 16.73 12.4667 17.134 13.1 17.5L15.45 15.15C15.6 15 15.796 14.8877 16.038 14.813C16.28 14.7383 16.5173 14.7173 16.75 14.75L20.2 15.45C20.4333 15.5167 20.625 15.6377 20.775 15.813C20.925 15.9883 21 16.184 21 16.4V20.45C21 20.75 20.9 21 20.7 21.2C20.5 21.4 20.25 21.5 19.95 21.5Z"
+                          fill="#9A1D8A" />
+                  </svg>
+              </a>
+              <div class="frame-2">
+                  <div class="talk-to-an-expert">Talk to an Expert</div>
+                  <a class="_91-98911-46941" href="tel:+91 9891146941">+91 98911 46941</a>
+              </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
+                  class="fa fa-arrow-right ms-3"></i></a>
       </div>
-      <div class="frame-3 px-4">
-        <a class="group-1" href="tel:+91 9891146941">
-          <div class="ellipse-1"></div>
-          <svg class="material-symbols-call" width="24" height="25" viewBox="0 0 24 25" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M19.95 21.5C17.8667 21.5 15.8083 21.046 13.775 20.138C11.7417 19.23 9.89167 17.9423 8.225 16.275C6.55833 14.6083 5.271 12.7583 4.363 10.725C3.455 8.69167 3.00067 6.63333 3 4.55C3 4.25 3.1 4 3.3 3.8C3.5 3.6 3.75 3.5 4.05 3.5H8.1C8.33333 3.5 8.54167 3.57933 8.725 3.738C8.90833 3.89667 9.01667 4.084 9.05 4.3L9.7 7.8C9.73333 8.06667 9.725 8.29167 9.675 8.475C9.625 8.65833 9.53333 8.81667 9.4 8.95L6.975 11.4C7.30833 12.0167 7.704 12.6123 8.162 13.187C8.62 13.7617 9.12433 14.316 9.675 14.85C10.1917 15.3667 10.7333 15.846 11.3 16.288C11.8667 16.73 12.4667 17.134 13.1 17.5L15.45 15.15C15.6 15 15.796 14.8877 16.038 14.813C16.28 14.7383 16.5173 14.7173 16.75 14.75L20.2 15.45C20.4333 15.5167 20.625 15.6377 20.775 15.813C20.925 15.9883 21 16.184 21 16.4V20.45C21 20.75 20.9 21 20.7 21.2C20.5 21.4 20.25 21.5 19.95 21.5Z"
-              fill="#9A1D8A" />
-          </svg>
-        </a>
-        <div class="frame-2">
-          <div class="talk-to-an-expert">Talk to an Expert</div>
-          <a class="_91-98911-46941" href="tel:+91 9891146941">+91 98911 46941</a>
-        </div>
-      </div>
-      <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
-          class="fa fa-arrow-right ms-3"></i></a>
-    </div>
   </nav>
   <!-- Navbar End -->
   <!--================ End Header Menu Area =================-->
@@ -149,10 +306,10 @@
           <div class="h_blog_text  wow fadeInUp" data-wow-delay="0.2s">
             <div class="h_blog_text_inner left right">
               <div class="one mb-4">
-                <h1 style="font-size: 26px;">Welcome to the </br> SureFire Universal Visa</h1>
+                <h1 style="font-size: 26px;">Welcome to the </br> Surefire Universal Visa</h1>
               </div>
               <p>
-                SureFire Universal Visas has been successfully turning dreams of career, travel and family reunification
+                Surefire Universal Visas has been successfully turning dreams of career, travel and family reunification
                 into stamped realities since (2000)
                 Its now really easy for our dedicated team to simplify the COMPLEXITIES of visa processes, making your
                 journey beautiful!
@@ -164,8 +321,8 @@
                 and the fulfillment of your dreams.
               </p>
 
-              <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More <i
-                  class="ti-arrow-right ml-1"></i></a>
+              <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More <i
+                  class="ti-arrow-right ml-1"></i></a> -->
               <!-- <a class="primary-btn" href="#">
                   Learn More <i class="ti-arrow-right ml-1"></i>
                 </a> -->
@@ -355,6 +512,11 @@
                         style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Mr. Amit kumar</h5>
                     <p>NZ spouse & child visa</p>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I will always be grateful for your service and I am a very satisfied client. May
                             you will be able to help more clients in the future and change their lives by guiding them
@@ -367,6 +529,11 @@
                         style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Rigzen</h5>
                     <p>Dependable service</p>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I appreciate the outstanding service you provided, Surefire Universal Visas.
                             Thank you to Dure fire universal visa for providing such helpful and dependable service. She
@@ -385,6 +552,11 @@
                     <h5 class="mb-0">Harvinder S. Alag
                     </h5>
                     <p> Canadian visa for my son </p>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I sincerely wish to thank you for your exceptional support in obtaining Canadian
                             visa for my son in such a short time, like within two weeks. We are truly grateful to you
@@ -399,6 +571,11 @@
                         style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Chaitanya Mucheli</h5>
                     <p>Student Visa</p>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I liked the personal approach of my mentor who really took an interest in each
                             of our projects and encouraged me to go further
@@ -417,12 +594,102 @@
         </div>
     </div>
     <!-- Testimonial End -->
+
+    <!-- Faq -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+          <div class="row row-cols-md-2">
+            <div class="col">
+              <img src="./assets/faq-animate.svg" alt="">
+            </div>
+            <div>
+                <h1 class="text-center mb-4">Common FAQs</h1>
+            
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How long does the PR process take?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Varies, but typically 6-12 months.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What are the costs involved?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Application fees, medical exam, police clearance, etc.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Can I bring my family with me?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, through family sponsorship programs.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Can I work while my application is being processed?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, if you have a valid work permit.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What are the language requirements?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You must meet certain English or French language proficiency levels.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+          </div>
+      </div>
+  </div>
+    <!-- End faq -->
   <!--Start Sticky Icon-->
   <div class="sticky-icon">
-    <a href="https://www.instagram.com/?hl=en" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
-    <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
-    <a href="https://aboutme.google.com/u/0/?referer=gplus" class="Google"><i class="fab fa-google-plus-g"> </i>
-      Google + </a>
+    <a href="https://instagram.com/surefirevisa?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+    <a href="https://www.facebook.com/profile.php?id=100088563865699&mibextid=LQQJ4d" target="_blank" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+    <a href="https://www.linkedin.com/company/surefirevisa/"  target="_blank" class="Google" ><i class="fab fa-linkedin-in "  > </i>
+        Linkdin </a>
+         <a href="https://api.whatsapp.com/send?phone=9967021291&text= Welcome to the Surefire Universal Visa " class="Youtube"><i class="fab fa-whatsapp"></i> Whatsapp </a>
+       
     <!-- <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
     <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
   </div>
@@ -491,9 +758,9 @@
                 </div> -->
       <div class="col-lg-3 col-md-6" style="margin: auto;">
         <div class="d-flex pt-2" style="justify-content: space-evenly;">
-                    <a class="btn btn-outline-light btn-social" href="https://instagram.com/surefirevisa?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088563865699&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/surefirevisa/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" href="https://instagram.com/surefirevisa?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/profile.php?id=100088563865699&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.linkedin.com/company/surefirevisa/"><i class="fab fa-linkedin-in"></i></a>
 
         </div>
         <!-- <h4 class="text-white mb-3">Newsletter</h4>

@@ -9185,7 +9185,9 @@ a.text-danger:hover {
 .text-light {
     color: #f8f9fa !important
 }
-
+.text-orange{
+    color: var(--orange)
+}
 a.text-light:focus,
 a.text-light:hover {
     color: #dae0e5 !important

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SureFire Universal Visas</title>
+    <title>Surefire Universal Visas</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -60,6 +60,41 @@
 div.text-center.p-4.pb-1 > p{
     font-size: small;
 }
+
+.dropdown-submenu {
+  position: relative;
+  
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  display: none;
+}
+    
+
+
+/* .owl-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    font-size: 2rem;
+    top: 0%;
+    color: var(--header);
+} */
+
+/* .owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-1000%);
+ 
+} */
+
+
         /* .intl-tel-input {
   display: table-cell;
 }
@@ -104,21 +139,178 @@ div.text-center.p-4.pb-1 > p{
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <!-- <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Visa Services</a>
-                    <div class="dropdown-menu fade-down m-0">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target=".first-level">Visa Services</a>
+                    <div class="dropdown-menu fade-down m-0 first-level">
                         <a href="student-visa.html" class="dropdown-item">Student Visa</a>
                         <a href="tourist-visa.html" class="dropdown-item">Tourist Visa</a>
+                        <a href="canada-pr.html" class="dropdown-item">Permanent Residency</a>
+                        <a href="dependent-visa.html" class="dropdown-item">Dependent Visa</a>
+                        <div class="dropdown-item dropdown-submenu dropdown-submenu-1">
+                            <a class="dropdown-toggle">Submenu-1</a>
+                            <ul class="dropdown-menu submenu-1">
+                                <li class="dropdown-item">
+                                    <a href="#">Item-1</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">Item-2</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">Item-3</a>
+                                </li>
+                            </ul>
+    
+                        </div>
+
+
+                        <div class="dropdown-item dropdown-submenu dropdown-submenu-2">
+                            <a class="dropdown-toggle">Submenu-2</a>
+                            <ul class="dropdown-menu submenu-2">
+                                <li class="dropdown-item">
+                                    <a href="#">Item-1</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">Item-2</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">Item-3</a>
+                                </li>
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div> -->
+
+            <div class="navbar-nav ms-auto p-4 p-lg-0 ">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown d-block d-md-none">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#visaDropdown">Student Visa</a>
+                    <ul class="dropdown-menu fade-down m-0 first-level" id="visaDropdown">
+                        <!-- <ul class="dropdown-menu submenu-1"> -->
+                            <li class="dropdown-item">
+                                <a href="canada-student-visa.html">Canada</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="usa-student-visa.html">USA</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="australia-student-visa.html">Australia</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="uk-student-visa.html">UK</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="irish-student-visa.html">IRELAND</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="europe-student-visa.html">EUROPE</a>
+                            </li>
+                        <!-- </ul> -->
+                       
+                        
+                        </ul>
+                </div>
+                <div class="nav-item dropdown d-block d-md-none">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#visaDropdown">Tourist Visa</a>
+                    <ul class="dropdown-menu fade-down m-0 first-level" id="visaDropdown">
+                        
+                            <li class="dropdown-item">
+                                <a href="canada-tourist-visa.html">Canada</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="uk-tourist-visa.html">UK</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="usa-tourist-visa.html">USA</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="australia-tourist-visa.html">Australia</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a href="europe-tourist-visa.html" >Europe</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="nz-tourist-visa.html">Newzealand</a>
+                            </li>
+                       
+                       
+                        
+                        </ul>
+                </div>
+                <a href="canada-pr.html" class="nav-item nav-link d-block d-md-none">Permanent Residency</a>
+                <a href="dependent-visa.html" class="nav-item nav-link d-block d-md-none">Dependent Visa</a>
+
+
+
+                <div class="nav-item dropdown d-none d-md-block">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#visaDropdown">Visa Services</a>
+                    <div class="dropdown-menu fade-down m-0 first-level" id="visaDropdown">
+                        <!-- <a href="student-visa.html" class="dropdown-item">Student Visa</a>
+                        <a href="tourist-visa.html" class="dropdown-item">Tourist Visa</a> -->
+                       
+                        <div class="dropdown-item dropdown-submenu dropdown-submenu-1 ">
+                            <div>Student Visa <i class="fa fa-angle-right submenu-arrow-right" >  </i></div>
+                            <ul class="dropdown-menu submenu-1">
+                                <li class="dropdown-item">
+                                    <a href="canada-student-visa.html">Canada</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="usa-student-visa.html">USA</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="australia-student-visa.html">Australia</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="uk-student-visa.html">UK</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="irish-student-visa.html">IRELAND</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="europe-student-visa.html">EUROPE</a>
+                                </li>
+                            </ul>
+    
+                        </div>
+
+                        <div class="dropdown-item dropdown-submenu dropdown-submenu-1 ">
+                            <div>Tourist Visa <i class="fa fa-angle-right submenu-arrow-right" >  </i></div>
+                            <ul class="dropdown-menu submenu-1">
+                                <li class="dropdown-item">
+                                    <a href="canada-tourist-visa.html">Canada</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="uk-tourist-visa.html">UK</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="usa-tourist-visa.html">USA</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="australia-tourist-visa.html">Australia</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="europe-tourist-visa.html" >Europe</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="nz-tourist-visa.html">Newzealand</a>
+                                </li>
+                            </ul>
+    
+                        </div>
                         <a href="canada-pr.html" class="dropdown-item">Permanent Residency</a>
                         <a href="dependent-visa.html" class="dropdown-item">Dependent Visa</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
+            
             <div class="frame-3 px-4">
                 <a class="group-1" href="tel:+91 9891146941">
                     <div class="ellipse-1"></div>
@@ -139,7 +331,7 @@ div.text-center.p-4.pb-1 > p{
         </div>
     </nav>
     <!-- Navbar End -->
-
+  
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
@@ -534,8 +726,45 @@ div.text-center.p-4.pb-1 > p{
 
     <!-- Start Count Effect -->
     <div class="container" id="counting">
-
         <div class="row text-center">
+            <div class="col">
+                <div class="counter">
+                    <i class="fa fa-sharp fa-user fa-2x" aria-hidden="true"></i>
+                    <h2 class="timer count-title count-number" data-to="15000" data-speed="1500" data-suffix="+">15,000+</h2>
+                    <p class="count-text">Seeking Advice Every Year</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fa-sharp fa-solid fa-face-smile fa-2x" aria-hidden="true"></i>
+                    <h2 class="timer count-title count-number" data-to="30" data-speed="1500" data-suffix="+">30+</h2>
+                    <p class="count-text">Partner with us </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fa-solid fa-lightbulb fa-2x" aria-hidden="true"></i>
+                    <h2 class="timer count-title count-number" data-to="6" data-speed="1500" data-suffix="+">6+</h2>
+                    <p class="count-text">Years of Experience</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fa fa-bullseye fa-2x" aria-hidden="true"></i>
+                    <h2 class="timer count-title count-number" data-to="100" data-speed="1500" data-suffix="%">100%</h2>
+                    <p class="count-text">Success Mission</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fa fa-history fa-2x" aria-hidden="true"></i>
+                    <h2 class="timer count-title count-number" data-to="2000" data-speed="1500" data-suffix="+">2,000+</h2>
+                    <p class="count-text">Success Stories</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="row text-center">
             <div class="col">
                 <div class="counter">
                     <i class="fa fa-sharp fa-user fa-2x"></i>
@@ -565,7 +794,7 @@ div.text-center.p-4.pb-1 > p{
                     <p class="count-text ">Our Dedicated Visa Services</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- <script>
@@ -690,7 +919,7 @@ div.text-center.p-4.pb-1 > p{
                     <div class="one">
                         <h1>About Us</h1>
                     </div>
-                    <h4 class="section-title bg-white text-start  pe-3 my-3">SureFire Universal Visas has been
+                    <h4 class="section-title bg-white text-start  pe-3 my-3">Surefire Universal Visas has been
                         successfully turning dreams of career, travel and family reunification into stamped realities
                         since (2000)
                     </h4>
@@ -729,7 +958,7 @@ div.text-center.p-4.pb-1 > p{
                             </p>
                         </div> -->
                     </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    <a href="about.html" class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
                 </div>
             </div>
         </div>
@@ -1439,6 +1668,11 @@ div.text-center.p-4.pb-1 > p{
                         style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Mr. Amit kumar</h5>
                     <p>NZ spouse & child visa</p>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I will always be grateful for your service and I am a very satisfied client. May
                             you will be able to help more clients in the future and change their lives by guiding them
@@ -1451,6 +1685,11 @@ div.text-center.p-4.pb-1 > p{
                         style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Rigzen</h5>
                     <p>Dependable service</p>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I appreciate the outstanding service you provided, Surefire Universal Visas.
                             Thank you to Dure fire universal visa for providing such helpful and dependable service. She
@@ -1469,6 +1708,11 @@ div.text-center.p-4.pb-1 > p{
                     <h5 class="mb-0">Harvinder S. Alag
                     </h5>
                     <p> Canadian visa for my son </p>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I sincerely wish to thank you for your exceptional support in obtaining Canadian
                             visa for my son in such a short time, like within two weeks. We are truly grateful to you
@@ -1483,6 +1727,11 @@ div.text-center.p-4.pb-1 > p{
                         style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Chaitanya Mucheli</h5>
                     <p>Student Visa</p>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
+                    <span class="fa fa-star checked text-orange"></span>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I liked the personal approach of my mentor who really took an interest in each
                             of our projects and encouraged me to go further
@@ -1502,7 +1751,137 @@ div.text-center.p-4.pb-1 > p{
     </div>
     <!-- Testimonial End -->
 
+
     <script>
+        (function ($) {
+            $.fn.countTo = function (options, viewCounter) {
+                if (viewCounter == 1) {
+                    options = options || {};
+    
+                    return $(this).each(function () {
+                        // set options for the current element
+                        var settings = $.extend({}, $.fn.countTo.defaults, {
+                            from: $(this).data('from'),
+                            to: $(this).data('to'),
+                            speed: $(this).data('speed'),
+                            refreshInterval: $(this).data('refresh-interval'),
+                            decimals: $(this).data('decimals'),
+                            suffix: $(this).data('suffix') || '',  // Added suffix option
+                        }, options);
+    
+                        // how many times to update the value, and how much to increment the value on each update
+                        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                            increment = (settings.to - settings.from) / loops;
+    
+                        // references & variables that will change with each update
+                        var self = this,
+                            $self = $(this),
+                            loopCount = 0,
+                            value = settings.from,
+                            data = $self.data('countTo') || {};
+    
+                        $self.data('countTo', data);
+    
+                        // if an existing interval can be found, clear it first
+                        if (data.interval) {
+                            clearInterval(data.interval);
+                        }
+                        data.interval = setInterval(updateTimer, settings.refreshInterval);
+    
+                        // initialize the element with the starting value
+                        render(value);
+    
+                        function updateTimer() {
+                            value += increment;
+                            loopCount++;
+    
+                            render(value);
+    
+                            if (typeof (settings.onUpdate) == 'function') {
+                                settings.onUpdate.call(self, value);
+                            }
+    
+                            if (loopCount >= loops) {
+                                // remove the interval
+                                $self.removeData('countTo');
+                                clearInterval(data.interval);
+                                value = settings.to;
+    
+                                if (typeof (settings.onComplete) == 'function') {
+                                    settings.onComplete.call(self, value);
+                                }
+                            }
+                        }
+    
+                        function render(value) {
+                            var formattedValue = settings.formatter.call(self, value, settings);
+                            formattedValue += settings.suffix;  // Add suffix (e.g., "+" or "%")
+                            $self.html(formattedValue);
+                        }
+                    });
+                };
+            }
+    
+            $.fn.countTo.defaults = {
+                from: 0,               // the number the element should start at
+                to: 0,                 // the number the element should end at
+                speed: 1000,           // how long it should take to count between the target numbers
+                refreshInterval: 100,  // how often the element should be updated
+                decimals: 0,           // the number of decimal places to show
+                formatter: formatter,  // handler for formatting the value before rendering
+                onUpdate: null,        // callback method for every time the element is updated
+                onComplete: null,       // callback method for when the element finishes updating
+                suffix: '+',            // Default suffix, can be overridden in individual count-number elements
+            };
+    
+            function formatter(value, settings) {
+                return value.toFixed(settings.decimals);
+            }
+        }(jQuery));
+    
+        jQuery(function ($) {
+            // custom formatting example
+            $('.count-number').data('countToOptions', {
+                formatter: function (value, options) {
+                    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                }
+            });
+    
+            // start all the timers
+            var viewCounter = 0;
+            $(document).on('scroll', function () {
+                if ($('.timer').each(count).isOnScreen() && viewCounter < 2) {
+                    viewCounter++;
+                    console.log(viewCounter);
+                }
+            });
+    
+            function count(options) {
+                var $this = $(this);
+                options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                $this.countTo(options, viewCounter);
+            }
+        });
+    
+        // check if element visible in viewport
+        $.fn.isOnScreen = function () {
+            var win = $(window);
+            var viewport = {
+                top: win.scrollTop(),
+                left: win.scrollLeft()
+            };
+            viewport.right = viewport.left + win.width();
+            viewport.bottom = viewport.top + win.height();
+    
+            var bounds = this.offset();
+            bounds.right = bounds.left + this.outerWidth();
+            bounds.bottom = bounds.top + this.outerHeight();
+    
+            return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+        };
+    </script>
+    
+    <!-- <script>
         (function ($) {
             $.fn.countTo = function (options, viewCounter) {
                 if (viewCounter == 1) {
@@ -1628,16 +2007,16 @@ div.text-center.p-4.pb-1 > p{
             return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 
         };
-    </script>
+    </script> -->
 
     <!--Start Sticky Icon-->
     <div class="sticky-icon">
-        <a href="https://instagram.com/surefirevisa?igshid=OGQ5ZDc2ODk2ZA==" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
-    <a href="https://www.facebook.com/profile.php?id=100088563865699&mibextid=LQQJ4d" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
-    <a href="https://aboutme.google.com/u/0/?referer=gplus" class="Google" ><i class="fab fa-linkedin-in "  > </i>
+        <a href="https://instagram.com/surefirevisa?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+    <a href="https://www.facebook.com/profile.php?id=100088563865699&mibextid=LQQJ4d" target="_blank" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+    <a href="https://www.linkedin.com/company/surefirevisa/"  target="_blank" class="Google" ><i class="fab fa-linkedin-in "  > </i>
         Linkdin </a>
-        <!-- <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
-        <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
+         <a href="https://api.whatsapp.com/send?phone=9967021291&text= Welcome to the Surefire Universal Visa " class="Youtube"><i class="fab fa-whatsapp"></i> Whatsapp </a>
+        <!--<a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
     </div>
     <!--End Sticky Icon-->
 
@@ -1704,9 +2083,9 @@ div.text-center.p-4.pb-1 > p{
                 </div> -->
             <div class="col-lg-3 col-md-6" style="margin: auto;">
                 <div class="d-flex pt-2" style="justify-content: space-evenly;">
-                    <a class="btn btn-outline-light btn-social" href="https://instagram.com/surefirevisa?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100088563865699&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/surefirevisa/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" href="https://instagram.com/surefirevisa?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/profile.php?id=100088563865699&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.linkedin.com/company/surefirevisa/"><i class="fab fa-linkedin-in"></i></a>
                     
                 </div>
                 <!-- <h4 class="text-white mb-3">Newsletter</h4>
@@ -1750,7 +2129,7 @@ div.text-center.p-4.pb-1 > p{
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
