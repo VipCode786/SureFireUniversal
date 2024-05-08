@@ -52,6 +52,37 @@
       height: auto;
 
     }
+
+    .custom-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0321be;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+#thankyoucontent {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.popup-content {
+    /* Customize the content styling as needed */
+    text-align: center;
+}
+
+
   </style>
 
 </head>
@@ -342,7 +373,7 @@
         <div class="col-lg-5">
           <div class="main_title" style="margin-bottom: 0;">
             <div class="one mb-4">
-              <h1> Why Choose Us !</h1>
+              <h1> Why Choose Us!</h1>
             </div>
             <!-- <h2 class="mb-3"></h2>
             <p>
@@ -355,6 +386,21 @@
           <h2 class="display-18 display-md-16 display-lg-14 font-weight-700">Why choose <strong class="text-primary font-weight-700">Us</strong></h2>
           <span>The trusted source for why choose us</span>
       </div> -->
+      <div class="col-sm-6 col-lg-4 mb-2-9 mb-sm-0 w-100 mx-auto">
+          <div class="pr-md-3">
+            <div class="text-center text-sm-right mb-2-9">
+              <div class="mb-2">
+                <img src="/assets/aboutUs/why_choose_us_img1.png" height="80px" width="80px" alt="..."
+                  class="rounded-circle">
+              </div>
+              <h4 class="sub-info">100% Transparency</h4>
+              <p class="display-30 mb-4"> We believe in complete transparency throughout the visa process. You'll be informed of every step we take, ensuring you understand and trust the journey to your new destination.
+
+              </p>
+            </div>
+           
+          </div>
+        </div>
       <div class="row align-items-center my-4">
         <div class="col-sm-6 col-lg-4 mb-2-9 mb-sm-0">
           <div class="pr-md-3">
@@ -363,8 +409,8 @@
                 <img src="/assets/aboutUs/why_choose_us_img1.png" height="80px" width="80px" alt="..."
                   class="rounded-circle">
               </div>
-              <h4 class="sub-info">VISA EXPERTISE</h4>
-              <p class="display-30 mb-4">We know visas inside out, making sure your application goes smoothly.
+              <h4 class="sub-info"> Post-Landing Services</h4>
+              <p class="display-30 mb-4">Our support doesn't end with visa approval. We provide comprehensive post-landing services to assist you in settling comfortably in your new environment, from accommodation arrangements to guidance on local amenities.
 
               </p>
             </div>
@@ -373,9 +419,8 @@
                 <img src="/assets/aboutUs/why_choose_us_img2.png" height="80px" width="80px" alt="..."
                   class="rounded-circle">
               </div>
-              <h4 class="sub-info">QUICK APPROVALS</h4>
-              <p class="display-30 mb-0">We speed up the process, ensuring you get your visa on time, we know the
-                essence of time!
+              <h4 class="sub-info">Ticketing Assistance</h4>
+              <p class="display-30 mb-0">Say goodbye to the hassle of booking tickets. We offer ticketing assistance to ensure your travel plans align seamlessly with your visa approval, making your journey stress-free.
               </p>
             </div>
           </div>
@@ -393,9 +438,9 @@
                 <img src="/assets/aboutUs/why_choose_us_img3.png" height="80px" width="80px" alt="..."
                   class="rounded-circle">
               </div>
-              <h4 class="sub-info">STRESS-FREE SERVICE</h4>
-              <p class="display-30 mb-4">We keep things calm and easy, giving you complete peace of mind through the
-                whole visa process.
+              <h4 class="sub-info">100% Visa Approval Assistance</h4>
+              <p class="display-30 mb-4">Your dream of studying or settling abroad is our priority. With our expert guidance and support, we strive to achieve a 100% visa approval rate, maximizing your chances of success.
+
               </p>
             </div>
 
@@ -404,12 +449,27 @@
                 <img src="/assets/aboutUs/why_choose_us_img4.png" height="80px" width="80px" alt="..."
                   class="rounded-circle">
               </div>
-              <h4 class="sub-info">PR SUCCESS</h4>
-              <p class="display-30 mb-0">We pay close attention to detail to make sure your permanent residency plans
-                become a reality!
+              <h4 class="sub-info">One-on-One Free Consultation</h4>
+              <p class="display-30 mb-0">We understand that every individual's journey is unique. That's why we provide personalized, one-on-one consultations free of charge, addressing your specific concerns and offering tailored solutions.
+
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-2-9 mb-sm-0 w-100 mx-auto">
+        <div class="pr-md-3">
+          <div class="text-center text-sm-right mb-2-9">
+            <div class="mb-2">
+              <img src="/assets/aboutUs/why_choose_us_img1.png" height="80px" width="80px" alt="..."
+                class="rounded-circle">
+            </div>
+            <h4 class="sub-info"> Free Profile Valuation</h4>
+            <p class="display-30 mb-4">Unsure about your eligibility or standing? Avail our free profile valuation service to assess your credentials and determine the best course of action for your visa application, ensuring you're on the right path from the start.
+
+            </p>
+          </div>
+         
         </div>
       </div>
     </div>
@@ -489,13 +549,345 @@
           </div>
         </div>
 
+        <div class="col-lg-6 col-md-6 wow fadeInUp py-4" data-wow-delay="0.3s">
+          <div class="single_feature">
+            <!-- <div class="icon"><span class="flaticon-earth"></span></div> -->
+            <i class="fa fa-book-open" style="font-size: 40px; color: rgb(67, 72, 75);" aria-hidden="true"></i>
 
+            <div class="desc">
+              <h4 class="mt-3 mb-2"> IELTS preparation </h4>
+              <p>
+                Surefire Universal Visas offers  IELTS preparation to ensure our clients excel in their language proficiency test. Our expert tutors provide personalized coaching, focusing on all four essential skills: reading, writing, listening, and speaking. Through interactive sessions and practical exercises, we help students build confidence and proficiency in English, ultimately maximizing their chances of success in the IELTS exam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 wow fadeInUp py-4" data-wow-delay="0.3s">
+          <div class="single_feature">
+            <!-- <div class="icon"><span class="flaticon-earth"></span></div> -->
+            <i class="fa fa-book-reader" style="font-size: 40px; color: rgb(67, 72, 75);" aria-hidden="true"></i>
+
+            <div class="desc">
+              <h4 class="mt-3 mb-2"> PTE preparation  </h4>
+              <p>
+                Surefire Universal Visas provides comprehensive PTE preparation customized to meet the diverse needs of our clients. Our experienced instructors employ effective teaching methods and exact resources to enhance students' proficiency in English. From mastering speaking and writing tasks to improving listening and reading skills, we offer targeted guidance and support to help individuals achieve their desired PTE scores.              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!--================ End Feature Area =================-->
 
+  <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+     <div class="row">
+        <div class="col-lg-8">
+          <div class="main_title text-left mb-0">
+            <div class="one mb-3">
+              <h1>Vision</h1>
+            </div>
+          </div>
+          <p>Surefire universal visas has a big dream. We want to he­lp people from all over the­ world achieve their dre­ams. Our vision is to make borders more­ like bridges, making it easie­r for people to travel and e­xplore the world, and giving eve­ryone the chance to se­ize opportunities where­ver they may be.           </p>
+        </div>
+        <div class="col-lg-4">
+          <img src="/assets/latestImage/guide_5.jpg" class="img-fluid" alt="">
+        </div>
+     </div>
 
+    <div class="row d-flex">
+      <div class="col-lg-8 order-md-2">
+        <div class="main_title text-left mb-0">
+          <div class="one mb-3">
+            <h1>Mission</h1>
+          </div>
+        </div>
+        <p>To make­ this vision a reality, we have a cle­ar mission. We want to be a beacon of hope­ for anyone who dreams of studying, traveling, or living abroad. We do this by offering top-notch assistance with visas, giving thorough coaching to prepare­ people for their journe­ys, and providing support every step of the­ way. </p>
+      </div>
+      <div class="col-lg-4 order-md-1" >
+        <img src="/assets/latestImage/mission.jpg" class="img-fluid" style="max-height: 300px;" alt="">
+      </div>     
+   </div>
+
+  </div>
+
+  <div class="container-xxl py-5">
+    <div class="container">
+
+        <div class="row">
+            <h3>Become a Partner with Us</h3>
+                <div class="col-lg-7 course_details_left">
+                    <!-- <div class="main_image">
+                        <img class="img-fluid" src="img/courses/course-details.jpg" alt="">
+                    </div> -->
+                    
+                    <div class="content_wrapper ">
+                        <p>
+                            Become a valued partner with Surefire Universal Visas and unlock a world of opportunities. 
+                            Whether you're a travel agency, educational institution, or immigration consultancy, partnering with us means gaining access to the best visa assistance solutions personalized to your clients' needs. From  visa processing to continuous support, our partnership program is designed to enhance your service offerings and elevate your business.
+                        </p>
+                        
+                        </div>
+                        <img src="/assets/latestImage/partner.png" class="img-fluid py-2" alt="">
+                </div>
+            
+            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
+                
+                <form id="yourFormId" >
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <select name="subject" class="form-select" style="padding: 1rem 0.75rem;" aria-label="Default select example" id="subject">
+                                    <option >Select Services</option>
+                                    <option value="Student Visa">Student Visa</option>
+                                    <option value="Tourist Visa">Tousrist Visa</option>
+                                    <option value="Permanent Resisdency">Permanent Resisdency</option>
+                                    <option value="Dedidated Service Visa">Dedidated Service Visa</option>
+                                    <option value="B2B Services" selected>B2B Services</option>
+                                  </select>
+                                <!-- <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Subject</label> -->
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="phone" placeholder="Your phone">
+                                <!-- <label for="phone">Your phone</label> -->
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-md-12">
+                            <div class="form-floating col-md-12">
+                                <input id="phone" type="tel" name="phone" style="padding-left: 50px;" />
+                                
+                            </div>
+                        </div> -->
+                        <div class="col-md-12" id="companyNameField" style="display: none;">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+                                <label for="companyName">Company Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12" id="identityProofField" style="display: none;">
+                            <div class="form-floating">
+                                <input type="file" class="form-control" id="identityProof" accept="image/*, application/pdf">
+                                <label for="identityProof">Upload Identity Proof</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12" id="businessRegistrationField" style="display: none;">
+                            <div class="form-floating">
+                                <input type="file" class="form-control" id="businessRegistration" accept="image/*, application/pdf">
+                                <label for="businessRegistration">Upload Business Registration Proof </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <div id="captcha" class="captcha">
+                                    <!-- <script>createCaptcha(); return false;</script> -->
+                                
+                                </div>
+                                <div class="restart">
+
+                                    <i class="fa fa-refresh" aria-hidden="true" href="#" onclick="createCaptcha(); return false;"></i>
+
+                                    <!-- <a >Change</a> -->
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="margin: auto;">
+                            <div class="form-floating">
+                                <input
+                                type="text"
+                                name="reCaptcha"
+                                id="reCaptcha"
+                                placeholder="Type The Captcha"
+                              />
+                                
+                            </div>
+                            <div id="errCaptcha" class="errmsg"></div>
+                        </div>
+                        <!-- <div class="col-12">
+                            <div id="captcha">
+                            </div>
+                            <input type="text" placeholder="Captcha" id="cpatchaTextBox"/>
+                        </div> -->
+
+                        <div class="col-12">
+                            <div class="btn btn-primary w-100 py-3" type="button" 
+                            
+                            onclick="validateCaptchaAndSubmit();"
+                            >Send Message</div>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- <script src="/js/captcha.js">
+                   onclick="validateCaptcha(event); return false;"
+                </script> -->
+<!-- Add this script after the form in your HTML -->
+
+
+<!-- Add this HTML for the custom pop-up/modal after your form -->
+
+<!-- <div id="customPopup" class="custom-popup">
+<div class="popup-content">
+    <p>You selected B2B Services. Please provide additional information:</p>
+    <input type="text" id="additionalInfoInput">
+    <button onclick="submitFormWithAdditionalInfo()">Submit</button>
+    <button onclick="closeCustomPopup()">Close</button>
+</div>
+</div> -->
+
+<div id="thankyoucontent" >
+<div class="wrapper-1">
+   <div class="wrapper-2">
+      <img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" alt="thank-you-envelope" border="0">
+    <h1>Thank you!</h1>
+     <p>for contacting us, we will reply promptly</p> 
+     <p>once your message is received. </p>
+     <button class="go-home"><a href="index.html">
+       home page</a>
+     </button>
+   </div>
+  
+   <div class="footer-like">
+     <p>
+     </p>
+   </div>
+</div>
+</div>
+</div>
+
+
+            
+            </div>
+        </div>
+    </div>
+
+    <script>
+      // Function to show the custom pop-up
+      function showCustomPopup() {
+          console.log("show custom popup")
+          var popup = document.getElementById("thankyoucontent");
+          popup.style.display = "block";
+      }
+      
+      // Function to handle form submission
+      function handleSubmit() {
+          // Get the selected value from the "Select Services" dropdown
+          var selectedService = document.getElementById("subject").value;
+          console.log("selectesservice",selectedService)
+          // Check if the selected service is "B2B Services"
+          if (selectedService === "B2B Services") {
+              // Display the custom pop-up
+              showCustomPopup();
+          } else {
+              // Continue with the normal form submission or other actions
+              // ...
+              alert("form submitted successfully")
+              // For example, you can submit the form programmatically
+              // document.forms["yourFormId"].submit();
+          }
+      }
+      
+      
+      let captcha = new Array();
+      
+                          function createCaptcha() {
+                          const activeCaptcha = document.getElementById("captcha");
+                          for (q = 0; q < 6; q++) {
+                              if (q % 2 == 0) {
+                              captcha[q] = String.fromCharCode(Math.floor(Math.random() * 26 + 65));
+                              } else {
+                              captcha[q] = Math.floor(Math.random() * 10 + 0);
+                              }
+                          }
+                          theCaptcha = captcha.join("");
+                          activeCaptcha.innerHTML = `${theCaptcha}`;
+                          }
+                          createCaptcha();
+      // Function to validate captcha and submit
+      function validateCaptchaAndSubmit() {
+          // Validate captcha
+          const errCaptcha = document.getElementById("errCaptcha");
+          const reCaptcha = document.getElementById("reCaptcha");
+          recaptcha = reCaptcha.value;
+          let validateCaptcha = 0;
+          for (var z = 0; z < 6; z++) {
+              if (recaptcha.charAt(z) != captcha[z]) {
+                  validateCaptcha++;
+              }
+          }
+      
+          if (recaptcha == "") {
+              errCaptcha.innerHTML = "Re-Captcha must be filled";
+          } else if (validateCaptcha > 0 || recaptcha.length > 6) {
+              errCaptcha.innerHTML = "Wrong captcha";
+          } else {
+              errCaptcha.innerHTML = "Done";
+              console.log("hello")
+              // Call the handleSubmit function
+              handleSubmit();
+          }
+      }
+      
+      function closeCustomPopup(){
+          var popup = document.getElementById("customPopup");
+          popup.style.display = "none";
+      }
+      // Attach the validateCaptchaAndSubmit function to the button's click event
+      document.querySelector("#yourFormId button").addEventListener("click", validateCaptchaAndSubmit);
+
+
+      
+      </script>
+      
+      <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            initialCountry: "in"
+        });
+
+        document.getElementById('subject').addEventListener('change', function() {
+    var selectedValue = this.value;
+
+    if (selectedValue === 'B2B Services') {
+        document.getElementById('companyNameField').style.display = 'block';
+        document.getElementById('identityProofField').style.display = 'block';
+        document.getElementById('businessRegistrationField').style.display = 'block';
+    } else {
+        document.getElementById('companyNameField').style.display = 'none';
+        document.getElementById('identityProofField').style.display = 'none';
+        document.getElementById('businessRegistrationField').style.display = 'none';
+    }
+});
+document.getElementById('subject').dispatchEvent(new Event('change'));
+
+    </script>
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
