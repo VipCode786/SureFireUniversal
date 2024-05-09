@@ -1535,3 +1535,14 @@
     .iti{
         width: 100%;
     }
+
+
+    .row-bg-color{
+        background-color: #00406E;
+        padding: 20px;
+    }
+     .row-bg-p{
+        background-color: #f8f9fa;
+        padding: 10px 10px;
+        color: #000;
+     }
