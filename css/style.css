@@ -605,6 +605,7 @@
     height: 15px;
     border: 1px solid #CCCCCC;
     transition: .5s;
+    border-radius: 50%;
 }
 
 .testimonial-carousel .owl-dot.active {
@@ -741,9 +742,16 @@
   
   .work-process .row .col-md-5 {
     display: flex;
+    /* margin-bottom: 35px; */
   }
   
 
+  @media screen and (max-width:750px) {
+    .work-process .row .col-md-5 {
+        display: flex;
+        margin-bottom: 35px;
+      }
+  }
 .process-box{
     background: #fff;
     padding: 10px;
@@ -1519,7 +1527,7 @@
     }
     .service-box h3 a {
         text-decoration: none;
-        color: #3EC0C0;
+        color: #005DA1;
         font-size: 24px;
     }
     .service-box :before {
@@ -1546,3 +1554,19 @@
         padding: 10px 10px;
         color: #000;
      }
+
+     img + p {
+        padding-top: 12px; /* Adjust the value as needed */
+      }
+
+      h3 > a{
+        color: #005DA1;
+    }
+
+    p{
+        color: #000;
+    }
+
+    .dropdown-item{
+        text-transform: capitalize;
+    }

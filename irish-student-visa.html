@@ -100,6 +100,13 @@
             content: none;
         }
 
+        .right-contents ul li {
+            list-style: disc;
+    background: unset;
+    padding: unset;
+    margin-bottom: unset;
+}
+
         h3{
             color: #005DA1;
         }
@@ -158,10 +165,10 @@
                                 <a href="uk-student-visa.html">UK</a>
                             </li>
                             <li class="dropdown-item active">
-                                <a href="irish-student-visa.html" class="text-white">IRELAND</a>
+                                <a href="irish-student-visa.html" class="text-white">Ireland</a>
                             </li>
                             <li class="dropdown-item">
-                                <a href="europe-student-visa.html">EUROPE</a>
+                                <a href="europe-student-visa.html">Europe</a>
                             </li>
                         <!-- </ul> -->
                        
@@ -219,10 +226,10 @@
                                     <a href="uk-student-visa.html">UK</a>
                                 </li>
                                 <li class="dropdown-item active">
-                                    <a href="irish-student-visa.html" class="text-white">IRELAND</a>
+                                    <a href="irish-student-visa.html" class="text-white">Ireland</a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="europe-student-visa.html">EUROPE</a>
+                                    <a href="europe-student-visa.html">Europe</a>
                                 </li>
                             </ul>
     
@@ -269,8 +276,13 @@
                 </a>
                 <div class="frame-2">
                     <div class="talk-to-an-expert">Talk to an Expert</div>
-                    <a class="_91-98911-46941" href="tel:+91 9891146941">+91 98911 46941</a>
+                    <a class="_91-98911-46941 text-center" href="tel:+91 9891146941"  >Call Us</a>
                 </div>
+                <script>
+                    document.querySelector('.group-1 svg').addEventListener('click', function() {
+                      window.location.href = 'tel:+91 9891146941';
+                    });
+                  </script>
             </div>
             <a href="partnerwithus.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
                     class="fa fa-arrow-right ms-3"></i></a>
@@ -346,13 +358,13 @@
                     <h3>Types of Student Visa</h3>
                     <div class="row ">
                     <div class="col-lg-6 d-flex flex-column align-items-center">
-                      <img src="/assets/latestImage/Rectangle 454.png" alt="">
+                      <img src="/assets/latestImage/irelandvisa1.png"  class="img-fluid">
                       <p class="font-weight-bold">
                         Study Visa: Ideal for full-time studies exceeding 3 months.
                       </p>  
                     </div>
                     <div class="col-lg-6 d-flex flex-column align-items-center">
-                        <img src="/assets/latestImage/Rectangle 455.png" alt="">
+                        <img src="/assets/latestImage/irelandvisa2.png" alt="" class="img-fluid">
                         <p class="font-weight-bold">
                             Short-Stay Visa: For courses or exchanges less than 3 months.
                         </p>  
@@ -373,27 +385,27 @@
                         
                         <h3>Eligibility Requirements</h3>
                 
-                        <ol>
-                            <li><strong>Acceptance letter from a recognized Irish institution.</strong></li>
-                            <li><strong>Proof of sufficient financial resources for tuition and living expenses.</strong></li>
-                            <li><strong>Valid passport and travel insurance.</strong></li>
-                            <li><strong>Meeting English language proficiency requirements.</strong></li>
-                        </ol>
+                        <ul>
+                            <li>Acceptance letter from a recognized Irish institution.</li>
+                            <li>Proof of sufficient financial resources for tuition and living expenses.</li>
+                            <li>Valid passport and travel insurance.</li>
+                            <li>Meeting English language proficiency requirements.</li>
+                        </ul>
                 
                         <h3>Application Process</h3>
                 
-                        <ol>
-                            <li><strong>Online application form, supporting documents, and fees.</strong></li>
-                            <li><strong>Biometric enrollment at a visa application center.</strong></li>
-                            <li><strong>Interview in some cases.</strong></li>
-                        </ol>
+                        <ul>
+                            <li>Online application form, supporting documents, and fees.</li>
+                            <li>Biometric enrollment at a visa application center.</li>
+                            <li>Interview in some cases.</li>
+                        </ul>
                 
                         <h3>Post-Approval</h3>
                 
-                        <ol>
-                            <li><strong>Register with Garda National Immigration Service (GNIS).</strong></li>
-                            <li><strong>Open a bank account and obtain health insurance.</strong></li>
-                        </ol>
+                        <ul>
+                            <li>Register with Garda National Immigration Service (GNIS).</li>
+                            <li>Open a bank account and obtain health insurance.</li>
+                        </ul>
                     </section>                  
                 </div>
             </div>
@@ -794,7 +806,9 @@
 <div class="container-xxl py-5">
 <div class="row">
     <div class="col-lg-7">
-        <h3>Frequently Asked Question</h3>
+        <div class="one mb-4">
+          <h1>Frequently Asked Question</h1>
+       </div>
         <div class="accordion" id="faqAccordion">
             <!-- FAQ 1 -->
             <div class="accordion-item">
