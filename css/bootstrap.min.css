@@ -2794,10 +2794,11 @@ fieldset:disabled .btn {
   background-color: #f0fbfc;
   border-color: #f0fbfc;
 }
+
 .btn-light:hover {
-  color: #000;
-  background-color: #f2fcfc;
-  border-color: #f2fbfc;
+  color: #fff;
+  background-color: #005DA1;
+  border-color: #005DA1
 }
 .btn-check:focus + .btn-light,
 .btn-light:focus {

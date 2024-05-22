@@ -522,9 +522,19 @@
 .owl-prev,
 .owl-next {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-500%);
  
+}
+
+@media (max-width:550px) {
+    .owl-prev,
+.owl-next {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-500%);
+ 
+}
 }
 .owl-prev {
     left: 3rem;
