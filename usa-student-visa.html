@@ -134,6 +134,30 @@
                     z-index: 999;
         }
 
+        @media screen and (max-width:500px) {
+            .card{
+                height: 300px;
+            }
+
+            .card-img{
+                height: -moz-available;         
+                height: -webkit-fill-available;  
+                height: fill-available;
+            }
+            .card-mob{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .card-mob-button{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
     </style>
   </head>
 
@@ -816,9 +840,9 @@
             
             <!-- ============ -->
         </div>
-        <div class="d-flex align-item-center justify-content-center">
+        <!-- <div class="d-flex align-item-center justify-content-center">
             <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 me-3 mb-5 animated">Enroll Now</a>
-            </div>
+            </div> -->
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
@@ -875,6 +899,20 @@
     </script>
   </div>
   <!-- Process Steps End -->
+
+  <div class="card bg-dark text-white mb-5">
+    <img class="card-img" src="/assets//latestImage/ielts3.png" alt="Card image">
+    <div class="row gx-0 card-img-overlay d-flex  gap-5 flex-column justify-content-center align-items-center">
+        <h2 class="col-md-8 col-12 text-white text-center">
+            Contact us for more exciting offers
+        </h2>
+        <div class="col-md-4 col-12 text-center">
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5">Get in Touch</a>
+        </div>
+    </div>
+    
+</div>
+
   <div class="container-xxl py-5 slider">
     <div class="text-center">
     <div class="one mb-4">
